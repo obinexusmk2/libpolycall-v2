@@ -1,4 +1,4 @@
-#include "libpolycall/micro/polycall_micro.h"
+
 #include "libpolycall/micro/polycall_micro.h"
 #include <string.h>
 #include <time.h>

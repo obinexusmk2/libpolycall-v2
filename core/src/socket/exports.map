@@ -1,0 +1,19 @@
+LIBPOLYCALL_SOCKET_2.0 {
+    global:
+        polycall_socket_*;
+        polycall_ws_*;
+        net_init;
+        net_close;
+        net_release_port;
+        net_send;
+        net_receive;
+        net_add_client;
+        net_remove_client;
+        net_init_program;
+        net_cleanup_program;
+        net_run;
+        network_endpoint_create;
+        network_endpoint_destroy;
+    local:
+        *;
+};

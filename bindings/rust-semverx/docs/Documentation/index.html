@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SemVerX - Semantic Version Extended System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0b0c10;
+            --teal: #45A29E;
+            --cyan: #66FCF1;
+            --orange: #FFB347;
+            --coral: #FF6B6B;
+            --gray: #C5C6C7;
+            --white: #FFFFFF;
+        }
+        
+        body {
+            background: var(--bg-primary);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .font-space { font-family: 'Space Grotesk', sans-serif; }
+        
+        .gradient-text {
+            background: linear-gradient(45deg, var(--teal), var(--cyan), var(--orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .component-card {
+            background: rgba(31, 40, 51, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .component-card:hover {
+            transform: translateY(-5px) rotateX(5deg);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: var(--cyan);
+        }
+        
+        .architecture-layer {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .data-flow {
+            stroke-dasharray: 5, 5;
+            animation: dash 2s linear infinite;
+        }
+        
+        @keyframes dash {
+            to { stroke-dashoffset: -10; }
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--cyan);
+            border-radius: 50%;
+            opacity: 0;
+        }
+        
+        .hero-bg {
+            background: radial-gradient(ellipse at center, rgba(69, 162, 158, 0.1) 0%, transparent 70%);
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(11, 12, 16, 0.8);
+        }
+        
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-blur border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <img src="resources/semverx-logo.png" alt="SemVerX Logo" class="h-8 w-8">
+                    <span class="font-space font-bold text-xl gradient-text">SemVerX</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#architecture" class="hover:text-cyan-400 transition-colors">Architecture</a>
+                    <a href="#features" class="hover:text-cyan-400 transition-colors">Features</a>
+                    <a href="#demo" class="hover:text-cyan-400 transition-colors">Demo</a>
+                    <a href="documentation.html" class="hover:text-cyan-400 transition-colors">Documentation</a>
+                    <a href="about.html" class="hover:text-cyan-400 transition-colors">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center hero-bg pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <h1 class="font-space font-bold text-6xl md:text-8xl mb-6">
+                    <span class="gradient-text">SemVerX</span>
+                </h1>
+                <div class="text-2xl md:text-3xl font-mono mb-8">
+                    <span id="typed-text"></span>
+                </div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Advanced semantic versioning system with hot-swappable components, 
+                    dependency resolution using graph theory, and support for polyglot architectures.
+                </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <button onclick="exploreArchitecture()" class="bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all transform hover:scale-105">
+                    Explore Architecture
+                </button>
+                <button onclick="viewDemo()" class="border border-cyan-400 text-cyan-400 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-400 hover:text-black transition-all">
+                    View Demo
+                </button>
+            </div>
+        </div>
+        
+        <!-- Hero Architecture Image -->
+        <div class="absolute inset-0 z-[-1] opacity-30">
+            <img src="resources/hero-architecture.jpg" alt="SemVerX Architecture" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <!-- Interactive Architecture Section -->
+    <section id="architecture" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-space font-bold text-4xl md:text-5xl mb-6">
+                    <span class="gradient-text">System Architecture</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Explore the layered architecture of SemVerX with interactive components and real-time data flow visualization.
+                </p>
+            </div>
+
+            <!-- Architecture Layers -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <!-- CDIS Layer -->
+                <div class="architecture-layer component-card p-8 rounded-2xl cursor-pointer" onclick="exploreLayer('cdis')">
+                    <div class="flex items-center mb-6">
+                        <div class="w-4 h-4 rounded-full mr-3" style="background-color: var(--teal)"></div>
+                        <h3 class="font-space font-bold text-2xl" style="color: var(--teal)">CDIS</h3>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-3">Classical Deterministic Instruction System</h4>
+                    <p class="text-gray-300 mb-6">
+                        Fixed logic and QA base layer providing deterministic rules and version schema parsing for stable component management.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--teal)"></span>
+                            Static Rule Engine
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--teal)"></span>
+                            Version Schema Parser
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--teal)"></span>
+                            QA Matrix Validator
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HDIS Layer -->
+                <div class="architecture-layer component-card p-8 rounded-2xl cursor-pointer" onclick="exploreLayer('hdis')">
+                    <div class="flex items-center mb-6">
+                        <div class="w-4 h-4 rounded-full mr-3" style="background-color: var(--cyan)"></div>
+                        <h3 class="font-space font-bold text-2xl" style="color: var(--cyan)">HDIS</h3>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-3">Hybrid Directed Instruction System</h4>
+                    <p class="text-gray-300 mb-6">
+                        Adaptive engine that directs evolutionary processes and resolves component intents using A* path evaluation.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--cyan)"></span>
+                            Evolution Engine
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--cyan)"></span>
+                            Intent Resolver
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--cyan)"></span>
+                            A* Path Evaluator
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QDIS Layer -->
+                <div class="architecture-layer component-card p-8 rounded-2xl cursor-pointer" onclick="exploreLayer('qdis')">
+                    <div class="flex items-center mb-6">
+                        <div class="w-4 h-4 rounded-full mr-3" style="background-color: var(--gray)"></div>
+                        <h3 class="font-space font-bold text-2xl" style="color: var(--gray)">QDIS</h3>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-3">Quantum Directed Instruction System</h4>
+                    <p class="text-gray-300 mb-6">
+                        Exploratory search and optimization layer using Hamiltonian cycle mapping for advanced dependency resolution.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--gray)"></span>
+                            Exploratory Node Search
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--gray)"></span>
+                            Hamiltonian Cycle Mapper
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--gray)"></span>
+                            Dynamic Fault Recovery
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SemVerX Core -->
+                <div class="architecture-layer component-card p-8 rounded-2xl cursor-pointer" onclick="exploreLayer('semverx')">
+                    <div class="flex items-center mb-6">
+                        <div class="w-4 h-4 rounded-full mr-3" style="background-color: var(--orange)"></div>
+                        <h3 class="font-space font-bold text-2xl" style="color: var(--orange)">SemVerX Core</h3>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-3">Semantic Version X Core</h4>
+                    <p class="text-gray-300 mb-6">
+                        Central versioning system with hot-swap controllers and dependency DAG resolution for component lifecycle management.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--orange)"></span>
+                            Version State Machine
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--orange)"></span>
+                            Hot Swap Controller
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 rounded-full mr-2" style="background-color: var(--orange)"></span>
+                            Dependency DAG Resolver
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Visualization -->
+            <div class="component-card p-8 rounded-2xl">
+                <h3 class="font-space font-bold text-2xl mb-6 text-center">System Data Flow</h3>
+                <div id="architecture-chart" class="w-full h-96"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-space font-bold text-4xl md:text-5xl mb-6">
+                    <span class="gradient-text">Key Features</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Advanced capabilities that set SemVerX apart from traditional versioning systems.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Hot Swappable Components -->
+                <div class="component-card p-6 rounded-2xl text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--coral)">
+                        <span class="text-2xl">🔥</span>
+                    </div>
+                    <h3 class="font-space font-bold text-xl mb-3">Hot Swappable Components</h3>
+                    <p class="text-gray-300 text-sm">
+                        Replace components in real-time without system downtime using advanced quiescent state management.
+                    </p>
+                </div>
+
+                <!-- Dependency Resolution -->
+                <div class="component-card p-6 rounded-2xl text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--teal)">
+                        <span class="text-2xl">🕸️</span>
+                    </div>
+                    <h3 class="font-space font-bold text-xl mb-3">Graph-Based Resolution</h3>
+                    <p class="text-gray-300 text-sm">
+                        Eulerian and Hamiltonian cycle algorithms for optimal dependency resolution and conflict avoidance.
+                    </p>
+                </div>
+
+                <!-- Polyglot Support -->
+                <div class="component-card p-6 rounded-2xl text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--cyan)">
+                        <span class="text-2xl">🌐</span>
+                    </div>
+                    <h3 class="font-space font-bold text-xl mb-3">Polyglot Architecture</h3>
+                    <p class="text-gray-300 text-sm">
+                        Support for multiple programming languages with FFI integration and schema standardization.
+                    </p>
+                </div>
+
+                <!-- Version Lifecycle -->
+                <div class="component-card p-6 rounded-2xl text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--orange)">
+                        <span class="text-2xl">🔄</span>
+                    </div>
+                    <h3 class="font-space font-bold text-xl mb-3">Version Lifecycle Management</h3>
+                    <p class="text-gray-300 text-sm">
+                        Automated transitions between stable, experimental, and legacy states with quality assurance gates.
+                    </p>
+                </div>
+
+                <!-- Fault Tolerance -->
+                <div class="component-card p-6 rounded-2xl text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--gray)">
+                        <span class="text-2xl">🛡️</span>
+                    </div>
+                    <h3 class="font-space font-bold text-xl mb-3">Fault Tolerance</h3>
+                    <p class="text-gray-300 text-sm">
+                        Dynamic fault recovery and system coherence maintenance during component transitions.
+                    </p>
+                </div>
+
+                <!-- Performance Optimization -->
+                <div class="component-card p-6 rounded-2xl text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--teal)">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="font-space font-bold text-xl mb-3">Performance Optimization</h3>
+                    <p class="text-gray-300 text-sm">
+                        A* pathfinding algorithms and intelligent caching for optimal system performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-space font-bold text-4xl md:text-5xl mb-6">
+                    <span class="gradient-text">Live Demo</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Experience SemVerX capabilities through interactive demonstrations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Dependency Graph Explorer -->
+                <div class="component-card p-8 rounded-2xl">
+                    <h3 class="font-space font-bold text-2xl mb-6">Dependency Graph Explorer</h3>
+                    <div id="dependency-graph" class="w-full h-80 mb-6"></div>
+                    <div class="flex space-x-4">
+                        <button onclick="addNode()" class="bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-lg text-sm transition-colors">
+                            Add Component
+                        </button>
+                        <button onclick="resolveDependencies()" class="bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg text-sm transition-colors">
+                            Resolve Dependencies
+                        </button>
+                        <button onclick="clearGraph()" class="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded-lg text-sm transition-colors">
+                            Clear Graph
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Version Lifecycle Simulator -->
+                <div class="component-card p-8 rounded-2xl">
+                    <h3 class="font-space font-bold text-2xl mb-6">Version Lifecycle Simulator</h3>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-center justify-between p-4 rounded-lg" style="background-color: rgba(69, 162, 158, 0.2)">
+                            <span class="font-mono">component-a v1.2.3</span>
+                            <div class="flex space-x-2">
+                                <button onclick="transitionVersion('stable')" class="bg-green-600 hover:bg-green-700 px-3 py-1 rounded text-xs">Stable</button>
+                                <button onclick="transitionVersion('experimental')" class="bg-yellow-600 hover:bg-yellow-700 px-3 py-1 rounded text-xs">Experimental</button>
+                                <button onclick="transitionVersion('legacy')" class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-xs">Legacy</button>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-4 rounded-lg" style="background-color: rgba(102, 252, 241, 0.2)">
+                            <span class="font-mono">component-b v2.0.1</span>
+                            <div class="flex space-x-2">
+                                <button onclick="transitionVersion2('stable')" class="bg-green-600 hover:bg-green-700 px-3 py-1 rounded text-xs">Stable</button>
+                                <button onclick="transitionVersion2('experimental')" class="bg-yellow-600 hover:bg-yellow-700 px-3 py-1 rounded text-xs">Experimental</button>
+                                <button onclick="transitionVersion2('legacy')" class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-xs">Legacy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lifecycle-status" class="text-center text-sm text-gray-400">
+                        Click buttons to simulate version state transitions
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Example -->
+            <div class="component-card p-8 rounded-2xl mt-12">
+                <h3 class="font-space font-bold text-2xl mb-6">Rust Implementation Example</h3>
+                <div class="bg-gray-900 rounded-lg p-6 overflow-x-auto">
+                    <pre class="font-mono text-sm"><code id="rust-code">use semverx::{SemVerX, Component, VersionState};
+
+let mut system = SemVerX::new();
+
+// Create components with different states
+let component_a = Component::new("component-a", "1.2.3")
+    .with_state(VersionState::Stable);
+
+let component_b = Component::new("component-b", "2.0.1")
+    .with_state(VersionState::Experimental);
+
+// Add dependency relationship
+system.add_dependency(&component_a, &component_b);
+
+// Perform hot-swap operation
+system.hot_swap(&component_b, "2.1.0").await?;
+
+// Resolve dependency conflicts using Eulerian cycles
+let resolution = system.resolve_with_eulerian_cycles()?;
+println!("Resolved dependencies: {:?}", resolution);</code></pre>
+                </div>
+                <div class="mt-4 text-center">
+                    <button onclick="runCodeExample()" class="bg-orange-600 hover:bg-orange-700 px-6 py-2 rounded-lg transition-colors">
+                        Run Example
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex items-center justify-center space-x-3 mb-4">
+                <img src="resources/semverx-logo.png" alt="SemVerX Logo" class="h-8 w-8">
+                <span class="font-space font-bold text-xl gradient-text">SemVerX</span>
+            </div>
+            <p class="text-gray-400 text-sm">
+                © 2025 SemVerX Project. Advanced semantic versioning for modern software systems.
+            </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

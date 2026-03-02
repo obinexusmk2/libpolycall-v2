@@ -1,0 +1,6 @@
+# cmake/agha_dozieConfig.cmake.in
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/agha_dozieTargets.cmake")
+
+check_required_components(agha_dozie)

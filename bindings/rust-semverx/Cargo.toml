@@ -1,0 +1,53 @@
+[package]
+name = "rust-semverx"
+version = "0.1.0"
+edition = "2021"
+authors = ["OBINexus Team"]
+
+[dependencies]
+semver = "1.0"
+petgraph = "0.6"
+unicode-normalization = "0.1"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+
+[dev-dependencies]
+criterion = "0.5"
+proptest = "1.0"
+cargo-tarpaulin = "0.18"
+
+[features]
+default = []
+security_tests = []
+ffi_tests = []
+
+[lib]
+name = "rust_semverx"
+path = "src/lib.rs"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[[bin]]
+name = "semverx"
+path = "src/bin/semverx/main.rs"
+
+[[test]]
+name = "unit_tests"
+path = "tests/unit/test_version_parsing.rs"
+
+[[test]]
+name = "security_tests"
+path = "tests/security/test_zero_trust.rs"
+required-features = ["security_tests"]
+
+[[test]]
+name = "integration_tests"
+path = "tests/integration/test_full_flow.rs"
+
+[profile.test]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true

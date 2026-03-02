@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SemVerX Documentation - Technical Specifications</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0b0c10;
+            --teal: #45A29E;
+            --cyan: #66FCF1;
+            --orange: #FFB347;
+            --coral: #FF6B6B;
+            --gray: #C5C6C7;
+            --white: #FFFFFF;
+        }
+        
+        body {
+            background: var(--bg-primary);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .font-space { font-family: 'Space Grotesk', sans-serif; }
+        
+        .gradient-text {
+            background: linear-gradient(45deg, var(--teal), var(--cyan), var(--orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .component-card {
+            background: rgba(31, 40, 51, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(11, 12, 16, 0.8);
+        }
+        
+        .code-block {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        
+        .sidebar {
+            position: sticky;
+            top: 80px;
+            height: calc(100vh - 80px);
+            overflow-y: auto;
+        }
+        
+        .doc-section {
+            scroll-margin-top: 100px;
+        }
+        
+        .toc-link {
+            transition: all 0.2s ease;
+        }
+        
+        .toc-link:hover {
+            color: var(--cyan);
+            padding-left: 8px;
+        }
+        
+        .toc-link.active {
+            color: var(--orange);
+            border-left: 2px solid var(--orange);
+            padding-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-blur border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <img src="resources/semverx-logo.png" alt="SemVerX Logo" class="h-8 w-8">
+                    <span class="font-space font-bold text-xl gradient-text">SemVerX</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-cyan-400 transition-colors">Home</a>
+                    <a href="#architecture" class="hover:text-cyan-400 transition-colors">Architecture</a>
+                    <a href="#api" class="hover:text-cyan-400 transition-colors">API Reference</a>
+                    <a href="#examples" class="hover:text-cyan-400 transition-colors">Examples</a>
+                    <a href="demo.html" class="hover:text-cyan-400 transition-colors">Demo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Documentation Layout -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Sidebar Navigation -->
+            <div class="lg:w-1/4">
+                <div class="sidebar component-card p-6 rounded-2xl">
+                    <h3 class="font-space font-bold text-lg mb-4 gradient-text">Documentation</h3>
+                    <nav class="space-y-2">
+                        <a href="#overview" class="toc-link block py-2 text-sm text-gray-300">Overview</a>
+                        <a href="#architecture" class="toc-link block py-2 text-sm text-gray-300">System Architecture</a>
+                        <a href="#core-concepts" class="toc-link block py-2 text-sm text-gray-300">Core Concepts</a>
+                        <a href="#api" class="toc-link block py-2 text-sm text-gray-300">API Reference</a>
+                        <a href="#installation" class="toc-link block py-2 text-sm text-gray-300">Installation</a>
+                        <a href="#examples" class="toc-link block py-2 text-sm text-gray-300">Code Examples</a>
+                        <a href="#algorithms" class="toc-link block py-2 text-sm text-gray-300">Algorithms</a>
+                        <a href="#best-practices" class="toc-link block py-2 text-sm text-gray-300">Best Practices</a>
+                        <a href="#troubleshooting" class="toc-link block py-2 text-sm text-gray-300">Troubleshooting</a>
+                    </nav>
+                    
+                    <div class="mt-8 pt-6 border-t border-gray-700">
+                        <h4 class="font-semibold text-sm mb-3">Quick Links</h4>
+                        <div class="space-y-2">
+                            <a href="https://github.com/obinexus/rust-semverx" target="_blank" class="block text-xs text-gray-400 hover:text-cyan-400">Rust Implementation</a>
+                            <a href="https://github.com/obinexus/libpolycall" target="_blank" class="block text-xs text-gray-400 hover:text-cyan-400">PolyCall Library</a>
+                            <a href="https://github.com/obinexus/hdis" target="_blank" class="block text-xs text-gray-400 hover:text-cyan-400">HDIS Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="lg:w-3/4">
+                <!-- Overview Section -->
+                <section id="overview" class="doc-section mb-16">
+                    <div class="component-card p-8 rounded-2xl">
+                        <h1 class="font-space font-bold text-4xl mb-6 gradient-text">SemVerX Documentation</h1>
+                        <p class="text-xl text-gray-300 mb-6">
+                            Comprehensive technical documentation for the Semantic Version Extended system.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="p-4 rounded-lg" style="background-color: rgba(69, 162, 158, 0.1)">
+                                <h3 class="font-semibold text-lg mb-2" style="color: var(--teal)">System Components</h3>
+                                <p class="text-sm text-gray-300">Four-layer architecture providing deterministic, adaptive, and exploratory instruction processing.</p>
+                            </div>
+                            <div class="p-4 rounded-lg" style="background-color: rgba(102, 252, 241, 0.1)">
+                                <h3 class="font-semibold text-lg mb-2" style="color: var(--cyan)">Hot-Swap Capability</h3>
+                                <p class="text-sm text-gray-300">Real-time component replacement without system downtime using quiescent state management.</p>
+                            </div>
+                            <div class="p-4 rounded-lg" style="background-color: rgba(255, 179, 71, 0.1)">
+                                <h3 class="font-semibold text-lg mb-2" style="color: var(--orange)">Graph Algorithms</h3>
+                                <p class="text-sm text-gray-300">Eulerian and Hamiltonian cycle algorithms for optimal dependency resolution.</p>
+                            </div>
+                            <div class="p-4 rounded-lg" style="background-color: rgba(255, 107, 107, 0.1)">
+                                <h3 class="font-semibold text-lg mb-2" style="color: var(--coral)">Polyglot Support</h3>
+                                <p class="text-sm text-gray-300">Multi-language integration with FFI bridges and schema standardization.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Architecture Section -->
+                <section id="architecture" class="doc-section mb-16">
+                    <div class="component-card p-8 rounded-2xl">
+                        <h2 class="font-space font-bold text-3xl mb-6">System Architecture</h2>
+                        <p class="text-gray-300 mb-8">
+                            SemVerX employs a sophisticated four-layer architecture designed to handle complex versioning scenarios 
+                            with support for hot-swappable components and advanced dependency resolution.
+                        </p>
+
+                        <div class="space-y-8">
+                            <!-- CDIS Layer -->
+                            <div class="border-l-4 pl-6" style="border-color: var(--teal)">
+                                <h3 class="font-space font-bold text-2xl mb-4" style="color: var(--teal)">CDIS - Classical Deterministic Instruction System</h3>
+                                <p class="text-gray-300 mb-4">
+                                    The foundational layer providing deterministic logic and quality assurance capabilities. 
+                                    CDIS ensures predictable behavior and validates all version schemas against established rules.
+                                </p>
+                                
+                                <div class="code-block p-4 mb-4">
+                                    <pre class="font-mono text-sm"><code>// CDIS Component Structure
+pub struct CDIS {
+    rule_engine: StaticRuleEngine,
+    schema_parser: VersionSchemaParser,
+    qa_validator: QAMatrixValidator,
+}
+
+impl CDIS {
+    pub fn validate_schema(&self, schema: &VersionSchema) -> Result<bool, ValidationError> {
+        // Validate version schema against deterministic rules
+        self.rule_engine.validate(schema)
+    }
+    
+    pub fn parse_version(&self, version: &str) -> Result<Version, ParseError> {
+        // Parse semantic version with extended schema support
+        self.schema_parser.parse(version)
+    }
+}</code></pre>
+                                </div>
+
+                                <h4 class="font-semibold text-lg mb-3">Key Features:</h4>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li><strong>Static Rule Engine:</strong> Enforces deterministic versioning rules and policies</li>
+                                    <li><strong>Version Schema Parser:</strong> Handles extended semantic version formats</li>
+                                    <li><strong>QA Matrix Validator:</strong> Validates components against quality assurance criteria</li>
+                                    <li><strong>Deterministic Behavior:</strong> Predictable outcomes for all operations</li>
+                                </ul>
+                            </div>
+
+                            <!-- HDIS Layer -->
+                            <div class="border-l-4 pl-6" style="border-color: var(--cyan)">
+                                <h3 class="font-space font-bold text-2xl mb-4" style="color: var(--cyan)">HDIS - Hybrid Directed Instruction System</h3>
+                                <p class="text-gray-300 mb-4">
+                                    The adaptive engine that manages component evolution and resolves dependency intents. 
+                                    HDIS uses A* pathfinding algorithms to optimize component relationships and transitions.
+                                </p>
+                                
+                                <div class="code-block p-4 mb-4">
+                                    <pre class="font-mono text-sm"><code>// HDIS Adaptive Engine
+pub struct HDIS {
+    evolution_engine: EvolutionEngine,
+    intent_resolver: IntentResolver,
+    path_evaluator: AStarPathEvaluator,
+}
+
+impl HDIS {
+    pub async fn resolve_intent(&self, intent: &ComponentIntent) -> Result<ResolutionPath, ResolutionError> {
+        // Resolve component dependency intents using A* algorithm
+        let path = self.path_evaluator.find_optimal_path(intent)?;
+        self.evolution_engine.execute_path(path).await
+    }
+    
+    pub fn adapt_component(&mut self, component: &mut Component, context: &Context) {
+        // Adapt component based on runtime context and requirements
+        self.evolution_engine.adapt(component, context);
+    }
+}</code></pre>
+                                </div>
+
+                                <h4 class="font-semibold text-lg mb-3">Key Features:</h4>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li><strong>Evolution Engine:</strong> Manages component lifecycle and adaptation</li>
+                                    <li><strong>Intent Resolver:</strong> Interprets and resolves dependency requirements</li>
+                                    <li><strong>A* Path Evaluator:</strong> Finds optimal paths for component transitions</li>
+                                    <li><strong>Adaptive Behavior:</strong> Dynamic adjustment based on system state</li>
+                                </ul>
+                            </div>
+
+                            <!-- QDIS Layer -->
+                            <div class="border-l-4 pl-6" style="border-color: var(--gray)">
+                                <h3 class="font-space font-bold text-2xl mb-4" style="color: var(--gray)">QDIS - Quantum Directed Instruction System</h3>
+                                <p class="text-gray-300 mb-4">
+                                    The exploratory layer providing advanced search and optimization capabilities. 
+                                    QDIS employs Hamiltonian cycle mapping for complex dependency resolution scenarios.
+                                </p>
+                                
+                                <div class="code-block p-4 mb-4">
+                                    <pre class="font-mono text-sm"><code>// QDIS Exploratory System
+pub struct QDIS {
+    node_search: ExploratoryNodeSearch,
+    cycle_mapper: HamiltonianCycleMapper,
+    fault_recovery: DynamicFaultRecovery,
+}
+
+impl QDIS {
+    pub fn find_hamiltonian_cycle(&self, graph: &DependencyGraph) -> Result<Cycle, SearchError> {
+        // Find Hamiltonian cycle for complete node coverage
+        self.cycle_mapper.find_cycle(graph)
+    }
+    
+    pub fn exploratory_search(&self, space: &SearchSpace) -> Vec<ComponentPath> {
+        // Perform exploratory search for optimal component configurations
+        self.node_search.explore(space)
+    }
+}</code></pre>
+                                </div>
+
+                                <h4 class="font-semibold text-lg mb-3">Key Features:</h4>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li><strong>Exploratory Node Search:</strong> Discovers optimal component configurations</li>
+                                    <li><strong>Hamiltonian Cycle Mapper:</strong> Ensures complete dependency coverage</li>
+                                    <li><strong>Dynamic Fault Recovery:</strong> Self-healing mechanisms for system resilience</li>
+                                    <li><strong>Quantum-Inspired Algorithms:</strong> Advanced optimization techniques</li>
+                                </ul>
+                            </div>
+
+                            <!-- SemVerX Core -->
+                            <div class="border-l-4 pl-6" style="border-color: var(--orange)">
+                                <h3 class="font-space font-bold text-2xl mb-4" style="color: var(--orange)">SemVerX Core</h3>
+                                <p class="text-gray-300 mb-4">
+                                    The central coordination system managing version lifecycles, hot-swapping operations, 
+                                    and dependency resolution across all layers.
+                                </p>
+                                
+                                <div class="code-block p-4 mb-4">
+                                    <pre class="font-mono text-sm"><code>// SemVerX Core System
+pub struct SemVerX {
+    state_machine: VersionStateMachine,
+    hot_swap_controller: HotSwapController,
+    dag_resolver: DependencyDAGResolver,
+    cdis: CDIS,
+    hdis: HDIS,
+    qdis: QDIS,
+}
+
+impl SemVerX {
+    pub async fn hot_swap(&mut self, component_id: &str, new_version: &str) -> Result<(), HotSwapError> {
+        // Perform zero-downtime component hot-swap
+        self.hot_swap_controller.swap(component_id, new_version).await
+    }
+    
+    pub fn resolve_dependencies(&self, components: &[Component]) -> Result<DependencyGraph, ResolutionError> {
+        // Resolve complex dependency relationships using DAG algorithms
+        self.dag_resolver.resolve(components)
+    }
+}</code></pre>
+                                </div>
+
+                                <h4 class="font-semibold text-lg mb-3">Key Features:</h4>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li><strong>Version State Machine:</strong> Manages component lifecycle states</li>
+                                    <li><strong>Hot Swap Controller:</strong> Handles zero-downtime component replacement</li>
+                                    <li><strong>Dependency DAG Resolver:</strong> Resolves complex dependency graphs</li>
+                                    <li><strong>Layer Coordination:</strong> Orchestrates operations across all system layers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Core Concepts Section -->
+                <section id="core-concepts" class="doc-section mb-16">
+                    <div class="component-card p-8 rounded-2xl">
+                        <h2 class="font-space font-bold text-3xl mb-6">Core Concepts</h2>
+                        
+                        <div class="space-y-8">
+                            <!-- Hot Swapping -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4" style="color: var(--coral)">Hot Swapping</h3>
+                                <p class="text-gray-300 mb-4">
+                                    SemVerX enables real-time component replacement without system downtime through sophisticated 
+                                    quiescent state management and state transfer mechanisms.
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                                    <div class="p-4 rounded-lg" style="background-color: rgba(255, 107, 107, 0.1)">
+                                        <h4 class="font-semibold mb-2">Quiescent State</h4>
+                                        <p class="text-sm text-gray-300">Component reaches idle state with no active requests</p>
+                                    </div>
+                                    <div class="p-4 rounded-lg" style="background-color: rgba(255, 107, 107, 0.1)">
+                                        <h4 class="font-semibold mb-2">State Transfer</h4>
+                                        <p class="text-sm text-gray-300">State migrated from old to new component</p>
+                                    </div>
+                                    <div class="p-4 rounded-lg" style="background-color: rgba(255, 107, 107, 0.1)">
+                                        <h4 class="font-semibold mb-2">Atomic Swap</h4>
+                                        <p class="text-sm text-gray-300">Seamless transition with zero downtime</p>
+                                    </div>
+                                </div>
+
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code>// Hot Swap Implementation
+impl HotSwapController {
+    pub async fn swap(&self, component_id: &str, new_version: &str) -> Result<(), HotSwapError> {
+        // 1. Establish quiescent state
+        let quiescent_state = self.establish_quiescent_state(component_id).await?;
+        
+        // 2. Instantiate new component
+        let new_component = self.instantiate_component(component_id, new_version)?;
+        
+        // 3. Transfer state
+        self.transfer_state(&quiescent_state, &new_component).await?;
+        
+        // 4. Atomic swap
+        self.atomic_swap(component_id, new_component).await?;
+        
+        // 5. Cleanup old component
+        self.cleanup_old_component(component_id).await?;
+        
+        Ok(())
+    }
+}</code></pre>
+                                </div>
+                            </div>
+
+                            <!-- Dependency Resolution -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4" style="color: var(--teal)">Dependency Resolution</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Advanced graph-based algorithms resolve complex dependency relationships using Eulerian cycles 
+                                    for edge coverage and Hamiltonian cycles for node coverage.
+                                </p>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                    <div class="p-4 rounded-lg" style="background-color: rgba(69, 162, 158, 0.1)">
+                                        <h4 class="font-semibold mb-3">Eulerian Cycles</h4>
+                                        <p class="text-sm text-gray-300 mb-3">Visit all edges in dependency graph to ensure complete relationship coverage</p>
+                                        <div class="code-block p-2">
+                                            <pre class="font-mono text-xs"><code>fn find_eulerian_cycle(graph: &Graph) -> Option<Cycle> {
+    // Ensure all vertices have even degree
+    if graph.vertices().any(|v| v.degree() % 2 != 0) {
+        return None;
+    }
+    // Find cycle using Hierholzer's algorithm
+    hierholzer_algorithm(graph)
+}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 rounded-lg" style="background-color: rgba(69, 162, 158, 0.1)">
+                                        <h4 class="font-semibold mb-3">Hamiltonian Cycles</h4>
+                                        <p class="text-sm text-gray-300 mb-3">Visit all nodes to ensure complete component coverage</p>
+                                        <div class="code-block p-2">
+                                            <pre class="font-mono text-xs"><code>fn find_hamiltonian_cycle(graph: &Graph) -> Option<Cycle> {
+    // Use backtracking with pruning
+    let mut path = Vec::new();
+    let mut visited = HashSet::new();
+    backtrack_hamiltonian(graph, &mut path, &mut visited)
+}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Version Lifecycle -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4" style="color: var(--orange)">Version Lifecycle Management</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Sophisticated state machine manages component versions through stable, experimental, and legacy states 
+                                    with automated quality gates and transition policies.
+                                </p>
+
+                                <div class="code-block p-4 mb-4">
+                                    <pre class="font-mono text-sm"><code>// Version State Machine
+pub enum VersionState {
+    Stable {
+        lts: bool,
+        supported_versions: Vec<Version>,
+    },
+    Experimental {
+        feature_flags: HashSet<String>,
+        stability_score: f64,
+    },
+    Legacy {
+        deprecation_date: DateTime<Utc>,
+        migration_path: Option<MigrationGuide>,
+    },
+}
+
+impl VersionStateMachine {
+    pub fn transition(&mut self, component: &mut Component, target_state: VersionState) -> Result<(), TransitionError> {
+        // Validate transition against quality gates
+        self.validate_transition(&component, &target_state)?;
+        
+        // Execute pre-transition hooks
+        self.execute_pre_transition_hooks(&component, &target_state)?;
+        
+        // Perform state transition
+        component.state = target_state;
+        
+        // Execute post-transition hooks
+        self.execute_post_transition_hooks(component)?;
+        
+        Ok(())
+    }
+}</code></pre>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div class="p-4 rounded-lg text-center" style="background-color: rgba(69, 162, 158, 0.2)">
+                                        <div class="w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center" style="background-color: var(--teal)">
+                                            <span class="text-white font-bold">S</span>
+                                        </div>
+                                        <h4 class="font-semibold mb-2">Stable</h4>
+                                        <p class="text-xs text-gray-300">Production-ready components with full support</p>
+                                    </div>
+                                    <div class="p-4 rounded-lg text-center" style="background-color: rgba(255, 179, 71, 0.2)">
+                                        <div class="w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center" style="background-color: var(--orange)">
+                                            <span class="text-white font-bold">E</span>
+                                        </div>
+                                        <h4 class="font-semibold mb-2">Experimental</h4>
+                                        <p class="text-xs text-gray-300">Beta features under testing and evaluation</p>
+                                    </div>
+                                    <div class="p-4 rounded-lg text-center" style="background-color: rgba(255, 107, 107, 0.2)">
+                                        <div class="w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center" style="background-color: var(--coral)">
+                                            <span class="text-white font-bold">L</span>
+                                        </div>
+                                        <h4 class="font-semibold mb-2">Legacy</h4>
+                                        <p class="text-xs text-gray-300">Deprecated components with migration support</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- API Reference Section -->
+                <section id="api" class="doc-section mb-16">
+                    <div class="component-card p-8 rounded-2xl">
+                        <h2 class="font-space font-bold text-3xl mb-6">API Reference</h2>
+                        
+                        <div class="space-y-8">
+                            <!-- Core API -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4">Core API</h3>
+                                <p class="text-gray-300 mb-6">Primary interface for SemVerX system operations and component management.</p>
+                                
+                                <div class="space-y-6">
+                                    <div class="border-l-4 pl-4" style="border-color: var(--cyan)">
+                                        <h4 class="font-semibold text-lg mb-2">new()</h4>
+                                        <p class="text-sm text-gray-400 mb-2">Creates a new SemVerX system instance</p>
+                                        <div class="code-block p-3">
+                                            <pre class="font-mono text-xs"><code>let mut system = SemVerX::new();</code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="border-l-4 pl-4" style="border-color: var(--cyan)">
+                                        <h4 class="font-semibold text-lg mb-2">add_component()</h4>
+                                        <p class="text-sm text-gray-400 mb-2">Adds a component to the system</p>
+                                        <div class="code-block p-3">
+                                            <pre class="font-mono text-xs"><code>let component = Component::new("service-a", "1.2.3");
+system.add_component(component)?;</code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="border-l-4 pl-4" style="border-color: var(--cyan)">
+                                        <h4 class="font-semibold text-lg mb-2">hot_swap()</h4>
+                                        <p class="text-sm text-gray-400 mb-2">Performs zero-downtime component replacement</p>
+                                        <div class="code-block p-3">
+                                            <pre class="font-mono text-xs"><code>system.hot_swap("service-a", "2.0.0").await?;</code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="border-l-4 pl-4" style="border-color: var(--cyan)">
+                                        <h4 class="font-semibold text-lg mb-2">resolve_dependencies()</h4>
+                                        <p class="text-sm text-gray-400 mb-2">Resolves complex dependency relationships</p>
+                                        <div class="code-block p-3">
+                                            <pre class="font-mono text-xs"><code>let graph = system.resolve_dependencies(&components)?;</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Component API -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4">Component API</h3>
+                                <p class="text-gray-300 mb-6">Interface for creating and managing individual system components.</p>
+                                
+                                <div class="code-block p-4 mb-4">
+                                    <pre class="font-mono text-sm"><code>// Component Creation
+let component = Component::new("api-gateway", "1.4.2")
+    .with_description("Main API gateway service")
+    .with_state(VersionState::Stable)
+    .with_dependencies(vec!["auth-service", "rate-limiter"])
+    .with_metadata(hashmap! {
+        "team" => "platform",
+        "criticality" => "high",
+        "compliance" => "sox",
+    });
+
+// Component Methods
+component.update_version("1.5.0")?;
+component.transition_state(VersionState::Experimental)?;
+component.add_dependency("new-service")?;
+let state = component.current_state();
+let deps = component.dependencies();</code></pre>
+                                </div>
+                            </div>
+
+                            <!-- Version Management API -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4">Version Management</h3>
+                                <p class="text-gray-300 mb-6">Advanced versioning capabilities beyond standard semantic versioning.</p>
+                                
+                                <div class="code-block p-4 mb-4">
+                                    <pre class="font-mono text-sm"><code>// Extended Version Schema
+let version = Version::parse("1.4.2+build.123.metadata")
+    .with_channel(VersionChannel::Stable)
+    .with_lts(true)
+    .with_support_policy(SupportPolicy::LongTerm);
+
+// Version Comparison
+let result = version.compare(&other_version);
+let compatible = version.is_compatible_with(&dependency_range);
+let upgrade_path = version.get_upgrade_path(&target_version);
+
+// Lifecycle Management
+version.transition_to(VersionState::Legacy {
+    deprecation_date: Utc::now(),
+    migration_path: Some(migration_guide),
+})?;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Installation Section -->
+                <section id="installation" class="doc-section mb-16">
+                    <div class="component-card p-8 rounded-2xl">
+                        <h2 class="font-space font-bold text-3xl mb-6">Installation</h2>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-space font-bold text-xl mb-4">Rust Installation</h3>
+                                <p class="text-gray-300 mb-4">Add SemVerX to your Rust project using Cargo.</p>
+                                
+                                <div class="code-block p-4 mb-4">
+                                    <pre class="font-mono text-sm"><code># Add to Cargo.toml
+[dependencies]
+semverx = "0.1.0"
+
+# For development version
+[dependencies]
+semverx = { git = "https://github.com/obinexus/rust-semverx" }</code></pre>
+                                </div>
+
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code>// Import in your Rust code
+use semverx::{SemVerX, Component, VersionState};
+use semverx::dependency::{DependencyGraph, ResolutionStrategy};
+use semverx::hot_swap::HotSwapPolicy;</code></pre>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="font-space font-bold text-xl mb-4">Python Installation</h3>
+                                <p class="text-gray-300 mb-4">Install SemVerX Python bindings via pip.</p>
+                                
+                                <div class="code-block p-4 mb-4">
+                                    <pre class="font-mono text-sm"><code># Install from PyPI
+pip install semverx
+
+# Install from source
+git clone https://github.com/obinexus/semverx-python
+cd semverx-python
+pip install -e .</code></pre>
+                                </div>
+
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code># Python usage
+import semverx
+
+system = semverx.SemVerX()
+component = semverx.Component("service-a", "1.2.3")
+system.add_component(component)
+
+# Hot swap operation
+await system.hot_swap("service-a", "2.0.0")</code></pre>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="font-space font-bold text-xl mb-4">Node.js Installation</h3>
+                                <p class="text-gray-300 mb-4">Install SemVerX for Node.js projects.</p>
+                                
+                                <div class="code-block p-4 mb-4">
+                                    <pre class="font-mono text-sm"><code># Install via npm
+npm install @obinexus/semverx
+
+# Install via yarn
+yarn add @obinexus/semverx</code></pre>
+                                </div>
+
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code>// Node.js usage
+const { SemVerX, Component, VersionState } = require('@obinexus/semverx');
+
+const system = new SemVerX();
+const component = new Component('service-a', '1.2.3');
+system.addComponent(component);
+
+// Hot swap operation
+await system.hotSwap('service-a', '2.0.0');</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Code Examples Section -->
+                <section id="examples" class="doc-section mb-16">
+                    <div class="component-card p-8 rounded-2xl">
+                        <h2 class="font-space font-bold text-3xl mb-6">Code Examples</h2>
+                        
+                        <div class="space-y-8">
+                            <!-- Basic Usage -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4">Basic Usage</h3>
+                                <p class="text-gray-300 mb-4">Getting started with SemVerX system initialization and component management.</p>
+                                
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code>use semverx::{SemVerX, Component, VersionState, VersionChannel};
+use semverx::dependency::DependencyGraph;
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    // Initialize SemVerX system
+    let mut system = SemVerX::new();
+    
+    // Create components
+    let mut api_gateway = Component::new("api-gateway", "1.4.2")
+        .with_description("Main API Gateway Service")
+        .with_state(VersionState::Stable)
+        .with_channel(VersionChannel::LongTermSupport);
+    
+    let mut auth_service = Component::new("auth-service", "2.1.0")
+        .with_description("Authentication and Authorization Service")
+        .with_state(VersionState::Stable);
+    
+    let mut rate_limiter = Component::new("rate-limiter", "0.9.8-beta")
+        .with_description("Rate Limiting Service")
+        .with_state(VersionState::Experimental {
+            feature_flags: vec!["advanced_throttling".to_string()],
+            stability_score: 0.85,
+        });
+    
+    // Add components to system
+    system.add_component(api_gateway.clone())?;
+    system.add_component(auth_service.clone())?;
+    system.add_component(rate_limiter.clone())?;
+    
+    // Define dependencies
+    system.add_dependency("api-gateway", "auth-service")?;
+    system.add_dependency("api-gateway", "rate-limiter")?;
+    
+    // Resolve dependencies
+    let dependency_graph = system.resolve_dependencies()?;
+    println!("Resolved dependency graph: {:?}", dependency_graph);
+    
+    Ok(())
+}</code></pre>
+                                </div>
+                            </div>
+
+                            <!-- Hot Swap Example -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4">Hot Swap Operation</h3>
+                                <p class="text-gray-300 mb-4">Perform zero-downtime component replacement using hot-swap functionality.</p>
+                                
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code>use semverx::hot_swap::{HotSwapPolicy, QuiescentStateConfig};
+
+// Configure hot swap policy
+let hot_swap_policy = HotSwapPolicy {
+    quiescent_timeout: Duration::from_secs(30),
+    state_transfer_timeout: Duration::from_secs(60),
+    rollback_on_failure: true,
+    health_check_enabled: true,
+};
+
+// Perform hot swap
+match system.hot_swap_with_policy("rate-limiter", "1.0.0", &hot_swap_policy).await {
+    Ok(_) => {
+        println!("✅ Hot swap completed successfully");
+        
+        // Verify new component is functioning
+        let updated_component = system.get_component("rate-limiter").unwrap();
+        assert_eq!(updated_component.version().to_string(), "1.0.0");
+        
+        // Check system health
+        let health_status = system.health_check().await?;
+        println!("System health: {:?}", health_status);
+    }
+    Err(e) => {
+        eprintln!("❌ Hot swap failed: {}", e);
+        
+        // Automatic rollback if configured
+        if hot_swap_policy.rollback_on_failure {
+            println!("🔄 Rolling back to previous version...");
+            system.rollback("rate-limiter").await?;
+        }
+    }
+}</code></pre>
+                                </div>
+                            </div>
+
+                            <!-- Dependency Resolution -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4">Advanced Dependency Resolution</h3>
+                                <p class="text-gray-300 mb-4">Use graph algorithms to resolve complex dependency relationships and conflicts.</p>
+                                
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code>use semverx::dependency::{ResolutionStrategy, GraphAlgorithm};
+
+// Complex dependency scenario
+let components = vec![
+    Component::new("frontend", "2.0.0"),
+    Component::new("backend-api", "1.5.0"),
+    Component::new("database", "3.2.1"),
+    Component::new("cache", "1.1.0"),
+    Component::new("message-queue", "2.3.0"),
+    Component::new("monitoring", "1.0.0"),
+];
+
+// Define complex dependency relationships
+let dependencies = vec![
+    ("frontend", "backend-api"),
+    ("backend-api", "database"),
+    ("backend-api", "cache"),
+    ("backend-api", "message-queue"),
+    ("monitoring", "backend-api"),
+    ("monitoring", "database"),
+];
+
+// Configure resolution strategy
+let resolution_strategy = ResolutionStrategy {
+    algorithm: GraphAlgorithm::EulerianCycle,
+    conflict_resolution: ConflictResolution::NewestCompatible,
+    circular_dependency_handling: CircularDependencyHandling::BreakWithFallback,
+};
+
+// Resolve dependencies using Eulerian cycle
+let resolved_graph = system
+    .resolve_dependencies_with_strategy(&components, &dependencies, &resolution_strategy)?;
+
+println!("Resolved dependency order:");
+for (i, component) in resolved_graph.topological_order().iter().enumerate() {
+    println!("{}. {}", i + 1, component.name());
+}</code></pre>
+                                </div>
+                            </div>
+
+                            <!-- Polyglot Integration -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4">Polyglot Integration</h3>
+                                <p class="text-gray-300 mb-4">Integrate components from different programming languages using FFI bridges.</p>
+                                
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code>use semverx::polyglot::{PolyglotAdapter, FFIBridge, SchemaStandardization};
+
+// Create polyglot adapter
+let adapter = PolyglotAdapter::new()
+    .with_schema_standardization(SchemaStandardization::Protobuf)
+    .with_error_mapping(true)
+    .with_performance_monitoring(true);
+
+// Register components from different languages
+let rust_component = Component::new("rust-service", "1.0.0")
+    .with_language("rust")
+    .with_ffi_interface("libmyrustservice.so");
+
+let python_component = Component::new("python-ml", "2.1.0")
+    .with_language("python")
+    .with_ffi_interface("my_ml_module.py")
+    .with_runtime_config(json!({
+        "interpreter": "python3.9",
+        "virtual_env": "/opt/venv/ml",
+    }));
+
+let node_component = Component::new("node-frontend", "3.0.0")
+    .with_language("javascript")
+    .with_ffi_interface("frontend_bundle.js")
+    .with_runtime_config(json!({
+        "runtime": "node",
+        "version": "16.x",
+        "package_manager": "npm",
+    }));
+
+// Register with adapter
+adapter.register_component(rust_component)?;
+adapter.register_component(python_component)?;
+adapter.register_component(node_component)?;
+
+// Create FFI bridge
+let bridge = FFIBridge::new(&adapter)
+    .with_error_handling(ErrorHandlingStrategy::GracefulDegradation)
+    .with_timeout(Duration::from_secs(30));
+
+// Execute cross-language call
+let result = bridge.call(
+    "rust-service",
+    "process_data",
+    &json!({"input": "data", "format": "json"})
+).await?;
+
+println!("Cross-language call result: {}", result);</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Algorithms Section -->
+                <section id="algorithms" class="doc-section mb-16">
+                    <div class="component-card p-8 rounded-2xl">
+                        <h2 class="font-space font-bold text-3xl mb-6">Algorithms</h2>
+                        
+                        <div class="space-y-8">
+                            <!-- A* Pathfinding -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4">A* Pathfinding for Component Resolution</h3>
+                                <p class="text-gray-300 mb-4">
+                                    A* algorithm optimizes component dependency resolution by finding the shortest path 
+                                    through the dependency graph while considering both actual and estimated costs.
+                                </p>
+                                
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code>impl AStarPathEvaluator {
+    pub fn find_optimal_path(&self, start: &Component, goal: &Component) -> Option<Path> {
+        let mut open_set = BinaryHeap::new();
+        let mut came_from = HashMap::new();
+        let mut g_score = HashMap::new();
+        let mut f_score = HashMap::new();
+        
+        // Initialize scores
+        g_score.insert(start.id(), 0.0);
+        f_score.insert(start.id(), self.heuristic(start, goal));
+        open_set.push(Node {
+            component: start.clone(),
+            f_score: f_score[start.id()],
+        });
+        
+        while let Some(current) = open_set.pop() {
+            if current.component == *goal {
+                return Some(self.reconstruct_path(&came_from, current.component));
+            }
+            
+            for neighbor in self.get_neighbors(&current.component) {
+                let tentative_g_score = g_score[&current.component.id()] + 
+                    self.transition_cost(&current.component, &neighbor);
+                
+                if tentative_g_score < g_score.get(&neighbor.id()).copied().unwrap_or(f64::INFINITY) {
+                    came_from.insert(neighbor.id(), current.component.clone());
+                    g_score.insert(neighbor.id(), tentative_g_score);
+                    f_score.insert(neighbor.id(), tentative_g_score + self.heuristic(&neighbor, goal));
+                    
+                    open_set.push(Node {
+                        component: neighbor,
+                        f_score: f_score[&neighbor.id()],
+                    });
+                }
+            }
+        }
+        
+        None
+    }
+    
+    fn heuristic(&self, current: &Component, goal: &Component) -> f64 {
+        // Heuristic based on version compatibility and stability
+        let version_distance = self.version_distance(current.version(), goal.version());
+        let stability_factor = current.stability_score();
+        let dependency_weight = self.dependency_complexity(current);
+        
+        version_distance * (2.0 - stability_factor) * (1.0 + dependency_weight)
+    }
+}</code></pre>
+                                </div>
+                            </div>
+
+                            <!-- Conflict Resolution -->
+                            <div>
+                                <h3 class="font-space font-bold text-2xl mb-4">Dependency Conflict Resolution</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Advanced algorithms handle diamond dependency problems and version conflicts using 
+                                    graph-based resolution strategies.
+                                </p>
+                                
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code>impl DependencyResolver {
+    pub fn resolve_conflicts(&self, conflicts: Vec<Conflict>) -> Result<Resolution, ResolutionError> {
+        let mut resolution_graph = ConflictGraph::new();
+        
+        // Build conflict graph
+        for conflict in conflicts {
+            resolution_graph.add_conflict(conflict);
+        }
+        
+        // Apply resolution strategies
+        let strategies = vec![
+            Box::new(NewestCompatibleStrategy),
+            Box::new(MinimalChangeStrategy),
+            Box::new(LeastDependenciesStrategy),
+            Box::new(CustomPriorityStrategy::new(self.config.priorities.clone())),
+        ];
+        
+        for strategy in strategies {
+            if let Some(resolution) = strategy.resolve(&resolution_graph)? {
+                return Ok(resolution);
+            }
+        }
+        
+        Err(ResolutionError::NoSatisfiableResolution)
+    }
+}
+
+struct NewestCompatibleStrategy;
+
+impl ResolutionStrategy for NewestCompatibleStrategy {
+    fn resolve(&self, graph: &ConflictGraph) -> Result<Option<Resolution>, ResolutionError> {
+        let mut candidates = Vec::new();
+        
+        for conflict in graph.conflicts() {
+            // Find newest compatible version
+            if let Some(compatible) = self.find_newest_compatible(&conflict.versions) {
+                candidates.push(compatible);
+            }
+        }
+        
+        if candidates.len() == graph.conflicts().len() {
+            Ok(Some(Resolution::new(candidates)))
+        } else {
+            Ok(None)
+        }
+    }
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Best Practices Section -->
+                <section id="best-practices" class="doc-section mb-16">
+                    <div class="component-card p-8 rounded-2xl">
+                        <h2 class="font-space font-bold text-3xl mb-6">Best Practices</h2>
+                        
+                        <div class="space-y-6">
+                            <div class="p-6 rounded-lg" style="background-color: rgba(69, 162, 158, 0.1)">
+                                <h3 class="font-space font-bold text-xl mb-3" style="color: var(--teal)">System Design</h3>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Design components with clear separation of concerns</li>
+                                    <li>Establish well-defined interfaces and contracts</li>
+                                    <li>Implement comprehensive health checks for all components</li>
+                                    <li>Use feature flags for experimental functionality</li>
+                                    <li>Plan migration paths for legacy component transitions</li>
+                                </ul>
+                            </div>
+
+                            <div class="p-6 rounded-lg" style="background-color: rgba(102, 252, 241, 0.1)">
+                                <h3 class="font-space font-bold text-xl mb-3" style="color: var(--cyan)">Hot Swapping</h3>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Implement idempotent operations for state transfer</li>
+                                    <li>Use circuit breakers to prevent cascade failures</li>
+                                    <li>Test hot-swap scenarios in staging environments</li>
+                                    <li>Monitor system health during component transitions</li>
+                                    <li>Implement rollback mechanisms for failed swaps</li>
+                                </ul>
+                            </div>
+
+                            <div class="p-6 rounded-lg" style="background-color: rgba(255, 179, 71, 0.1)">
+                                <h3 class="font-space font-bold text-xl mb-3" style="color: var(--orange)">Dependency Management</h3>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Regularly audit and update dependencies</li>
+                                    <li>Use semantic versioning consistently across all components</li>
+                                    <li>Implement dependency vulnerability scanning</li>
+                                    <li>Maintain clear documentation of dependency relationships</li>
+                                    <li>Use dependency lock files for reproducible builds</li>
+                                </ul>
+                            </div>
+
+                            <div class="p-6 rounded-lg" style="background-color: rgba(255, 107, 107, 0.1)">
+                                <h3 class="font-space font-bold text-xl mb-3" style="color: var(--coral)">Monitoring & Observability</h3>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Implement comprehensive logging for all system operations</li>
+                                    <li>Use distributed tracing for cross-component calls</li>
+                                    <li>Monitor dependency resolution performance metrics</li>
+                                    <li>Set up alerts for hot-swap failures and conflicts</li>
+                                    <li>Track version lifecycle transitions and success rates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Troubleshooting Section -->
+                <section id="troubleshooting" class="doc-section mb-16">
+                    <div class="component-card p-8 rounded-2xl">
+                        <h2 class="font-space font-bold text-3xl mb-6">Troubleshooting</h2>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-space font-bold text-xl mb-4">Common Issues</h3>
+                                
+                                <div class="space-y-4">
+                                    <div class="border-l-4 pl-4" style="border-color: var(--coral)">
+                                        <h4 class="font-semibold text-lg mb-2">Hot Swap Failures</h4>
+                                        <p class="text-gray-300 mb-2"><strong>Symptoms:</strong> Component replacement fails or system becomes unstable</p>
+                                        <p class="text-gray-300 mb-2"><strong>Causes:</strong> State transfer timeout, incompatible interfaces, resource constraints</p>
+                                        <p class="text-gray-300"><strong>Solution:</strong> Check quiescent state timeout, validate interface compatibility, monitor resource usage</p>
+                                    </div>
+
+                                    <div class="border-l-4 pl-4" style="border-color: var(--coral)">
+                                        <h4 class="font-semibold text-lg mb-2">Dependency Conflicts</h4>
+                                        <p class="text-gray-300 mb-2"><strong>Symptoms:</strong> Resolution failures or incorrect dependency versions</p>
+                                        <p class="text-gray-300 mb-2"><strong>Causes:</strong> Diamond dependencies, version incompatibilities, circular dependencies</p>
+                                        <p class="text-gray-300"><strong>Solution:</strong> Use graph-based resolution, implement conflict resolution strategies, audit dependency versions</p>
+                                    </div>
+
+                                    <div class="border-l-4 pl-4" style="border-color: var(--coral)">
+                                        <h4 class="font-semibold text-lg mb-2">Performance Issues</h4>
+                                        <p class="text-gray-300 mb-2"><strong>Symptoms:</strong> Slow dependency resolution or high memory usage</p>
+                                        <p class="text-gray-300 mb-2"><strong>Causes:</strong> Complex dependency graphs, inefficient algorithms, memory leaks</p>
+                                        <p class="text-gray-300"><strong>Solution:</strong> Optimize graph algorithms, implement caching, monitor memory usage</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="font-space font-bold text-xl mb-4">Debugging Tools</h3>
+                                
+                                <div class="code-block p-4">
+                                    <pre class="font-mono text-sm"><code>// Enable debug logging
+use semverx::logging::{LogLevel, Logger};
+
+let logger = Logger::new()
+    .with_level(LogLevel::Debug)
+    .with_output(LoggerOutput::Console)
+    .with_format(LogFormat::Json);
+
+let mut system = SemVerX::new().with_logger(logger);
+
+// Enable verbose dependency resolution
+let resolution_config = ResolutionConfig {
+    verbose: true,
+    trace_algorithm_execution: true,
+    save_intermediate_results: true,
+};
+
+let graph = system.resolve_dependencies_with_config(
+    &components, 
+    &resolution_config
+)?;
+
+// Performance profiling
+use semverx::profiling::{Profiler, ProfileTarget};
+
+let profiler = Profiler::new()
+    .target(ProfileTarget::DependencyResolution)
+    .target(ProfileTarget::HotSwapOperations)
+    .sample_rate(0.1);
+
+let profile = profiler.profile(|| {
+    system.hot_swap("component-a", "2.0.0")
+}).await?;
+
+println!("Performance profile: {:?}", profile);</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex items-center justify-center space-x-3 mb-4">
+                <img src="resources/semverx-logo.png" alt="SemVerX Logo" class="h-8 w-8">
+                <span class="font-space font-bold text-xl gradient-text">SemVerX</span>
+            </div>
+            <p class="text-gray-400 text-sm">
+                © 2025 SemVerX Project. Advanced semantic versioning for modern software systems.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Table of Contents Navigation
+        document.addEventListener('DOMContentLoaded', () => {
+            const tocLinks = document.querySelectorAll('.toc-link');
+            const sections = document.querySelectorAll('.doc-section');
+            
+            // Update active link based on scroll position
+            const updateActiveLink = () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 120;
+                    if (window.pageYOffset >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                tocLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', updateActiveLink);
+            updateActiveLink();
+            
+            // Smooth scroll for TOC links
+            tocLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // Animate code blocks on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    anime({
+                        targets: entry.target,
+                        opacity: [0, 1],
+                        translateY: [20, 0],
+                        duration: 600,
+                        easing: 'easeOutCubic'
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.code-block').forEach(block => {
+            block.style.opacity = '0';
+            observer.observe(block);
+        });
+    </script>
+</body>
+</html>

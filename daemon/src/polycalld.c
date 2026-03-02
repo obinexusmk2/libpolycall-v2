@@ -158,7 +158,10 @@ static void handle_client(int client_fd)
                            "Connection: close\r\n"
                            "\r\n"
                            "{\"status\":\"ok\",\"version\":\"" POLYCALLD_VERSION "\"}\n";
-        write(client_fd, resp, strlen(resp));
+        ssize_t written = write(client_fd, resp, strlen(resp));
+        if (written < 0) {
+            perror("polycalld: write");
+        }
     }
     close(client_fd);
 }

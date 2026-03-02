@@ -1,15 +1,8 @@
-/*
- * daemonize.c - Unix daemon process helper
- * OBINexus Computing - LibPolycall V2
- */
-
 #include "daemonize.h"
 
-#include <errno.h>
 #include <fcntl.h>
-#include <signal.h>
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>

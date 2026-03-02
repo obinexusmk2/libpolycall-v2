@@ -53,7 +53,7 @@ typedef struct {
 
 /* State machine types - use canonical definitions */
 #include "libpolycall/core/polycall_state_machine.h"
-typedef void* polycall_sm_t;
+typedef PolyCall_StateMachine* polycall_sm_t;
 #define POLYCALL_SM_ERROR POLYCALL_SM_ERROR_INVALID_STATE
 
 typedef struct {

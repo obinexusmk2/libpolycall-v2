@@ -1,0 +1,1752 @@
+49 minutes, 53 seconds86 5.86 um time time first 5.86 time first
+50:0150 minutes, 1 secondto space. So if I time um that'll be 5.8 859
+50:1050 minutes, 10 seconds5.859 uh which is 5.86 86 um from time to the time not the space
+50:2150 minutes, 21 secondsfirst and that was allocated to the for for half the time and double the space.
+50:2850 minutes, 28 secondsNow you get half double the space uh double the time double half the space and half the space and double the time you can have half the time. So half the
+50:3650 minutes, 36 secondsspace will be 512 / 2 which be 26
+50:4450 minutes, 44 secondsby of data over double the space double space or or just space you know um
+50:5250 minutes, 52 secondsdouble space um space allocated but you know the double space is not really double space is basically 512 + 512
+51:0051 minutesum but uh uh that will be the maximum rate so 512 + 52 is giving you 512 * 2
+51:0651 minutes, 6 secondsgive you * 2 give you 1,24 200 you have 26 bytes of data uh memory
+51:1651 minutes, 16 secondsdivided by over double time over half the time double time the time will be 4 seconds*
+51:2451 minutes, 24 seconds4 so you have to be divided by 4 seconds which be 64 so 256 / 64 will give you
+51:3451 minutes, 34 seconds256 Six by four would be uh four four
+51:4351 minutes, 43 secondsby four bytes um four by sequences
+51:5251 minutes, 52 secondsfour by sequences so of memory allocated ahead of time. So you can do this by verifying the indexing operation and
+52:0052 minutesdoing this. So the now the last part of this is basically sequence of the system. So sequence is basically four byt sequence for the space this is space
+52:0952 minutes, 9 secondsspace the space is s the space allocated need to be four by sequence only four
+52:1552 minutes, 15 secondsbytes of four by four by um four bytes for uh uh uh double the time for half
+52:2252 minutes, 22 secondsthe time for half the space and half the time half the space is this one half the space is 256 um by which is four bytes.
+52:3052 minutes, 30 secondsSo that 26* 4 to give you 512 um in sequence. So basically that's allocated for the C
+52:3852 minutes, 38 secondsfour bytes four bytes to four bytes for every 64 seconds you take uh to send a
+52:4652 minutes, 46 secondsmessage ahead of time. So the Mexican is sustainable via like a to like V onion
+52:5352 minutes, 53 secondssystems onions um which are systems of onion onions onions but you know don't worry about that for now. So you get you
+53:0153 minutes, 1 secondget the the time S and T the space and the time the space in bytes bytes it's called which you need um the time so you
+53:1053 minutes, 10 secondsfor um to the 5.86 86 sequences sequences of time by we get a series of
+53:1853 minutes, 18 secondsseries basically the polar space of time first I can space of the system the space of
+53:2653 minutes, 26 secondsthe message or I can time so I could just do two time 2t to 1 s and that's the ratio of the
+53:3553 minutes, 35 secondssystem so this one every two message I send that failed every two message I send to team in time I send I said one I
+53:4453 minutes, 44 secondssaid one space I allocate back to the allocate for the next sequence and that's a series so series execution is
+53:5153 minutes, 51 secondsin parallel too because you get two time to have the space um so next next
+53:5953 minutes, 59 secondslecture we'll be looking at um formally um in the next video we'll be looking at double the space double time that will
+54:0754 minutes, 7 secondsbe that will be my calculator v so we have 25.86 86 86 25.86 86*
+54:1854 minutes, 18 seconds2 57
+54:2454 minutes, 24 seconds57 51 51 second 51 nconds for one 51 ncond
+54:3454 minutes, 34 secondsuh 51 51 51.72 time which is milliseconds milliseconds
+54:4054 minutes, 40 secondsin time over to the ratio of uh one space and How will be four backs?
+54:4854 minutes, 48 secondsSo for every for every for every second of time two 22 two t two seconds of time um uh we
+54:5754 minutes, 57 secondshave 513 572 to one space and that will be per four bytes per four bytes of memory
+55:0655 minutes, 6 seconds[clears throat] per four bytes of allocation for the message will be excellent to be delivered safely and
+55:1255 minutes, 12 secondssecurely to um uh uh um someone that's waiting for response um via inverse
+55:2055 minutes, 20 secondsrelay kinematics inverse kinematics inverse relay. So you know um which is for next but the go this is here.
+55:3255 minutes, 32 secondsSo OB get 0 get one one get 22 is a tree and
+55:4155 minutes, 41 secondsit's a tri number. So I can send OBI as indexes too and you can verify in that table [laughter] if they have a dynamic table too you know um but you know they
+55:5055 minutes, 50 secondsdon't need one too you know zero zi this selfing tree O is on the left B is on the right and I is on the on the right
+55:5855 minutes, 58 secondsso this will be the the space will be calculated as um um um 88 88 um OB index
+56:0756 minutes, 7 seconds88 88 which are which are indexing operations to the system of eight comma 8 which will be indexing. So that'll be
+56:1656 minutes, 16 secondswhat we use here to calculate the math regist four by per four bytes. So you know it's
+56:2456 minutes, 24 secondsnot over four by it's per four bytes. So it works in terms of grid and the grid is basically what you search the space to see what are the meaning as a signal.
+56:3356 minutes, 33 secondsSo you get a signal which is search. So you pi / 3 or pi / 2 I mean direction of direction number of square root over two one one one half one over square root.
+56:4256 minutes, 42 secondsSo if you get if you have if you have one more thing if you have one got it.
+56:5456 minutes, 54 secondsIf you have um pi over pi over um six bases if you
+57:0357 minutes, 3 secondshave pi u the original first. So you have first
+57:1057 minutes, 10 secondsthe first d of cosine sign you get cosine. So it works same way as a system of sign you get one of one square root
+57:1957 minutes, 19 secondsof one one over of two which [clears throat] is 30°
+57:2757 minutes, 27 secondsum but you know
+57:3557 minutes, 35 secondsthat's one of two I say what this is like um the standard
+57:4557 minutes, 45 secondsone you get you get like a sin x sin x you get sin x you get sin y um cosine y
+57:5257 minutes, 52 secondswhich is so you have y know what's the y so sin x will be um the what x mean sin
+58:0258 minutes, 2 secondsx sin x so you get sin y which is um uh 30° you get sin x which is - 30 - 30 -
+58:1058 minutes, 10 seconds30° which is which is cosine x.
+58:1558 minutes, 15 secondsSo sin x is cosine x you share x and y uh kind of function which is direct the
+58:2358 minutes, 23 secondsfirst derative of it. So sin x is cosine. So, so get so
+58:3058 minutes, 30 secondsyou get signs and you get
+58:4058 minutes, 40 secondsI'm looking at it here s cosine uh but s cosine will give you x y and z.
+58:4858 minutes, 48 secondsSo you get s cosine which is rise of s will basically s give you rise over y x
+58:5658 minutes, 56 secondswhich is sign rise around will give you x y
+59:0359 minutes, 3 secondsand tangent will give you um the ration between them. So this will give you uh one over
+59:1359 minutes, 13 secondsone system of x to y one y x depending on the tangent [clears throat]
+59:2259 minutes, 22 secondsline will give you s y s
+59:3259 minutes, 32 secondswill tell you the agent of opposite opposite angle
+59:3959 minutes, 39 secondsthat give you the ratio of the opposite to opposite which will be y
+59:4759 minutes, 47 secondsum the ratio over the hypotenuse opposite which is y x over the hypotenuse
+59:5559 minutes, 55 secondsover h will give you um y h so this system of formulation you guys you know so this what I'm using to formalize it
+1:00:041 hour, 4 secondsbut you know uh review Give this the roots of that some.
+1:00:111 hour, 11 secondsSo the continuity of the framework is this.
+1:00:161 hour, 16 secondsSo you get s cosine and tangent. See the tangent is y which is same as the sign but the sign
+1:00:251 hour, 25 secondsis not it's not the sign over half be so posit
+1:00:331 hour, 33 secondsand now the h is over that will be something of the y give you self evaluate the polar series which I rubbed
+1:00:421 hour, 42 secondsoff here but that's the end of the message here uh on this video we look at spring physics
+1:00:491 hour, 49 secondsthe spring physics application of a system force and via like a forces push
+1:00:541 hour, 54 secondsof force. So equals displacement time
+1:01:001 hour, 1 minuteforce um so that easy lapis integrals to solve the issue.
+1:01:091 hour, 1 minute, 9 secondsOkay, lots of love guys. Thank you very much for watching. If you watch the video, if you like it, give a thumbs up.
+1:01:131 hour, 1 minute, 13 secondsUh subscribe if you want to. But you know, it's up to you right.
+1:01:191 hour, 1 minute, 19 secondsBut that's the secret protocol. The here now it's going to verify in time now and the here and space but the here is where
+1:01:281 hour, 1 minute, 28 secondsyou at. So it's basically to use the kind of system where you are help
+1:01:401 hour, 1 minute, 40 secondsprotocol for here and now we are constitutional compilers. Um uh take care of yourself and always u always look yourself in every shape everywhere
+1:01:491 hour, 1 minute, 49 secondsshape form you can um in every pathway you go uh every way you go every form you take every persona you take
+1:01:581 hour, 1 minute, 58 secondsmasquerade don't mask and uh every pathway shape and form you take every
+1:02:051 hour, 2 minutes, 5 secondsform part of the shape shape of the path you take or the structure you became something you structure you um Yeah.
+1:02:141 hour, 2 minutes, 14 secondsTake care of something. Goodby
+0:011 secondSo basically uh this image on the uh this one's Nambdi. So it's like a the one I
+0:1111 secondslove. It's like my avatar but it's like Nambi in cartoon form. It's my puppet in form. It's like cartoon dark skin glasses.
+0:2222 secondsMy art avatar. This one's called my heart logo. my silver color image uh on
+0:2828 secondsmedium color manifesto by on behalf of person living under the house and stuff August 25 and it's
+0:3737 secondslike it's a sigy this or so basically from a problem you know it's like a it's a birth certificate for change but I'm
+0:4545 secondsgoing to make the change but like it's okay you know uh and if you follow my channel I really don't care if you follow or not um but this is my um Uh
+0:5454 secondsthis is an update but it's also rift test operate updates. So um I'm trying to make it 30 minutes or less. Uh let me go see. So you got uh basically you got
+1:031 minute, 3 secondsrift uh rift uh which is uh rift is a fl translator but you got rift test
+1:101 minute, 10 secondsuh rift test. What is rift test? So you got rift test which is the testing library for rift. But you see it's about rift test really. But why is rift
+1:181 minute, 18 secondspowerful? like um there's nothing in here for now but uh I'll show you why um the rift test library. So this is the rift
+1:261 minute, 26 secondsuh but it seems like you don't understand what this is but you know I'll come back to that later. This what is about rift you get so you get rift uh
+1:341 minute, 34 secondswhich can do a lot of things uh based on a star cing uh basically this is the model uh consciousness doing stuff that energy
+1:421 minute, 42 secondsbut you know going test the testing log one so basically it's very important to do it properly uh so uh the I'm going to show you the repository I'm working on
+1:501 minute, 50 secondsso you got the R uh capital RO uh which is the the rift open uh basically it's a program that you can
+1:581 minute, 58 secondsrun uh to open any Linux you get this kind of
+2:062 minutes, 6 secondsthis when you get pul but it's like the license you get to run rift uh you get the country get model you get to but
+2:132 minutes, 13 secondsit's about this uh testing it so basically I'm going to show you this via the rift test library so our open is um
+2:212 minutes, 21 secondsthe where you can go to see r open uh you can download it here do this one so what's video important why is this video important Shut up and do your job.
+2:312 minutes, 31 secondsSorry, Aar. I'm doing my job.
+2:332 minutes, 33 secondsNo, keep quiet. You're not doing your job. Yes, it's my job.
+2:362 minutes, 36 secondsYou're not doing nothing, Aza. You know you're not doing nothing. No, don't start.
+2:412 minutes, 41 secondsBasically, um uh I don't Sorry, I see him. Don't want him there. Asa, I don't want you my video. You're my friend as
+2:492 minutes, 49 secondsSorry. So um basically uh rift test is um so roof test is like uh the testing
+2:572 minutes, 57 secondslibrary for roof uh but it's like um uh uh you get the artist get um the roof
+3:053 minutes, 5 secondstest also uh basically uh what basically roof test is a library uh but it works on something called filter flash fun. So
+3:133 minutes, 13 secondswhen you filter something you're sorting out you're organizing it you're um you're trying to process it uh because you're doing some kind of computation on
+3:213 minutes, 21 secondsit uh which is like a star scoring 11 graph uh filtering is an interpretation of a system uh state uh open division so
+3:303 minutes, 30 secondswhen you filter something you're interpreting it but you're running some kind of function uh can be log n can be
+3:363 minutes, 36 secondslog n login space time b can be one but fling is like you the
+3:433 minutes, 43 secondscity for like uh filtering, sorting out sorting searching stuff um searching algorithms uh sorting algorithms uh merging algorithms merge. So anything
+3:523 minutes, 52 secondsthat um filter uh is not a flash uh everything any any pure filter uh can be uh uh it's not flash because the filter
+4:004 minutesis only for processing if it's in process it's uh hence the flash you get the filter flash reality uh but you know
+4:074 minutes, 7 secondsthe rift test is basically when you get flash if I start with a corner piece of a puzzle um already flashed this started
+4:164 minutes, 16 secondsso input se doesn't matter in the puzzle but I can find the It's going to be I like I like it. I have to place it separate from
+4:244 minutes, 24 secondsEarth to make the full image. Uh whether it's like a starship doesn't really matter or the bottom of ocean. Um this images here um the fif flash functions
+4:324 minutes, 32 secondsare birectional at the bare minimum. Uh but you know you can basically when you flash something you store it but you know it's tri because it works in a fun.
+4:424 minutes, 42 secondsSo you can flash anything flash can be into a fix anything can be a flash uh uh via tri modeling. Uh but with that works
+4:504 minutes, 50 secondson tomographic. So what do I mean by that? So basically imagine I want to um hack something but I don't know the state of that system. Uh it's like a but
+4:584 minutes, 58 secondsI can guess the state. I can guess the state of that system. No I want to buy an IP address but I go to IP address already. It's a static IP address. It's a dynamic address you know but I have
+5:065 minutes, 6 secondsthe website URL uh you know the URL of but is dynamic. So it it routes me to
+5:135 minutes, 13 secondssome kind of um uh state uh but it basically went to like um um you say
+5:215 minutes, 21 secondslike um hackme hack me hack the h pack hack the box uh dog or hack me hack me hackme now you know hack me has an IP
+5:305 minutes, 30 secondsaddress uh 1981 126 uh 0.1 uh this for UK uh you know UK
+5:375 minutes, 37 secondsregions uh but some kind of region uh UK based on some kind of state I was All right, but you know this is still hackable because it doesn't matter where
+5:445 minutes, 44 secondsI am in the UK hacking done now uh is doesn't allow switching. So if I know this my state and how the uh geomorphic
+5:535 minutes, 53 secondsuh system is set up, I can still break the lattice. Uh basically lis has to change the alignment. I can polarize my
+6:006 minutespicking a lock basically. Um see systems are rigid rules but you know I can still break a diamond system because they are
+6:076 minutes, 7 secondsit's like picking a lock um to lock mine the lock might change the pin changing the pin. So I have to pick a location to um to authenticize some kind of
+6:156 minutes, 15 secondsservices. I can break the IP and you get the static IP address. It's going to be at least one ST IP can uh in that D
+6:226 minutes, 22 secondsframework. It doesn't really matter what if it's not fully sparse if it's not sparse uh but it's just dynamic router routing uh which I'm going for. So you
+6:316 minutes, 31 secondsget 1982. So basically just like a IP4 address. If I type in IP 400, I should be able to uh get those site uh in the
+6:406 minutes, 40 secondsold way. But you know the the site is just pointing this is a point system just IP address uh which I'm saying to you guys. So the idea of this um uh that
+6:476 minutes, 47 secondsis just to show that kind of uh via consensus modeling uh which like a try direct uh yes yes you're allowed
+6:556 minutes, 55 secondspermission. Yes. Yes. Yes. You're allowed consent and yes yes you're allowed um consensus to do some task uh via u dynamic uh tomographic.
+7:047 minutes, 4 secondsUm but you know I'm trying to make sure it's good. So how this work in practice?
+7:087 minutes, 8 secondsSo you can have a relay attack. Uh now what what is a relay attack? What is a relay attack? A relay attack is like you know you know a system state you know
+7:167 minutes, 16 secondssome kind of arbitrary state. You know you basically you have noise you have their noise but their noise some signal or your signal. So their noise is your
+7:237 minutes, 23 secondssignal. Um so you know you know some states that you know that no one knows you know. So for example uh obviously
+7:317 minutes, 31 secondsreal attack is like say I can observe something uh I can measure it 100% but I can put it back no matter no matter what
+7:387 minutes, 38 secondsthe attack is relay uh for example I send the same signal back to the system has to process it like picking locks
+7:467 minutes, 46 secondsbasically uh you know when you have a bike lock you you uh lock you pick the lock you know you configuration you know inside or some of
+7:557 minutes, 55 secondsdoor lock it doesn't matter the master lock you know because you put your uh your key in or your screwdriver in. You then push it right, push right, you go through some combination left, right,
+8:038 minutes, 3 secondsand you know the lock, you start to get more information, you know, cuz you know the lock allows you to uh mechanically twist it. It just allows to be broken.
+8:128 minutes, 12 secondsYou know what I'm saying? So really is like uh same thing here because it allows you to like see what you're doing without by knowing the state of the system. uh you know get more information
+8:218 minutes, 21 secondsbut basically if you know half information if you know a quarter of you know half already because there's some kind of chemical standards to all that kind of lock when it's a master lock if
+8:308 minutes, 30 secondsthere's no master lock in that system then it's perfect but you have a different key in that system uh but if it's a master key it's a master lock
+8:378 minutes, 37 secondssaying uh this problem there so the idea here is like observer so example like you know if I'm
+8:468 minutes, 46 secondsuh if I if I have to if I get a wireless signal uh I know I can ser the signal uh bit by bit uh without consensus. Uh but
+8:548 minutes, 54 secondsbasically um the idea here is to have gulan scale the observer consumer model for sparse interpretation and which is
+9:019 minutes, 1 secondthe photo flash function uh mapping. So you get the function two to one two data or functions to one output and that one
+9:099 minutes, 9 secondsoutput has two other one or two other functions. Uh so you get two one uh and you pause if you have a two you have a
+9:179 minutes, 17 secondsspace if you have some space time uh function a stop uh it takes two two outputs the space is uh some storage of 50 me
+9:269 minutes, 26 secondsbecause time is like half the time 25 meters you get uh 50 uh uh 50 megabytes
+9:329 minutes, 32 secondsuh per per half the time 25 seconds uh uh uh it this time uh 50 is uh um
+9:429 minutes, 42 secondslogin. Basically, basically get 50 uh 50 uh 50 megabytes. Uh how much is 50 megabytes? uh one one by 8 bit uh uh one
+9:529 minutes, 52 secondsmegaby uh is uh one 1,00 1 megaby 1 kilob uh
+9:599 minutes, 59 secondsand two and one uh 1,00 kilobyt you get uh let's say you get 50 kiloby
+10:0810 minutes, 8 secondsthat's like five KB you know so you get 50 kilob megaby that's one five you get
+10:1510 minutes, 15 secondsover the time 5 seconds this is half the time but you know It's like not even good enough. Okay, basically uh a kilo is a,000,000.
+10:2210 minutes, 22 secondsSo you get 5,000 kilobytes. Uh uh let's say 5,000 500 5,000 kilobytes you get
+10:3010 minutes, 30 secondsone megaby 1 kilo 500 kiloby over the time of 25 seconds of half 60 seconds 30 seconds that will be 53 1.3 recurring
+10:4010 minutes, 40 secondsmegaby and that's a to get some kind of function that maps with uh because tomography
+10:4810 minutes, 48 secondsis the key. Tomography is the key. Uh the idea you look at it inside for example you have some kind of volume uh
+10:5610 minutes, 56 secondsuh basically you are trying to see you have like um a cube uh like a sphere uh you have the a sphere uh you have the
+11:0411 minutes, 4 secondsarea you have the surface area but you try to figure out the volume density so it like um surface the surface area the volume.
+11:1311 minutes, 13 secondsSo for example what that means is like this you get the surface area. What does that mean? So what that means you get the surface area that means you get uh
+11:2011 minutes, 20 secondsuh uh 2 pi r 2 pi r 2 pi r is uh the surface the radius is u uh 100 100 uh
+11:2811 minutes, 28 seconds1,000 or 100 uh uh meters miles meters uh 100 ft uh 10 100 ft
+11:3611 minutes, 36 seconds100t uh and then the radius is uh uh 50 uh centimeters
+11:4411 minutes, 44 secondsuh 50 which is 100 ft. 100 ft and then you get the pi 3.14 and you get the 2 pi
+11:5211 minutes, 52 seconds2 * pi r and that is like 3.14.
+11:5711 minutes, 57 secondsSo you get 100 100,000 100,000
+12:0412 minutes, 4 secondscm 100,000 ft. Uh but you know you don't know this. You need know the area which is just this uh components. Basically have to pick the lock to try to get the
+12:1212 minutes, 12 secondscomponents. Uh that oh this is confusing me. So this comes down you get some kind of uh converg uh for
+12:2112 minutes, 21 secondsexample uh let me book it out. Uh basically let's use your use 100 uh
+12:2812 minutes, 28 secondsth00and uh 100 or 100. To get the calculator, you can go to online calculator here 100 uh 100 wides uh
+12:3712 minutes, 37 secondslet's see 100 centimeters 100 centimeters 100 cm time uh p * uh * pi*
+12:4512 minutes, 45 secondsp * p is what uh * 34 that's 340.
+12:5112 minutes, 51 secondsNow 340 cm is uh is not squared because it's not a volume. So that's the parameter. So you know you get the 2 pi * 2. So you get time 2* 2 you get what?
+13:0113 minutes, 1 secondUm uh 62 62 uh 62 uh 83185
+13:0713 minutes, 7 secondsor 618 uh uh 54 you know you know uh 63 61 like a centime squ perimeter uh it's
+13:1613 minutes, 16 secondslike a surface area but sur is like you know how much you go um on the perimeter but you have to have some kind of fun that's a pretty separate area bas
+13:2813 minutes, 28 secondssorry uh sorry Uh so for when you go to one unit, you go two units that way. So like you have to refle
+13:3813 minutes, 38 secondsto breathe cuz you know when someone tries to pick a lock uh system lock them out you know dynamically without telling them to lock them out uh basically
+13:4613 minutes, 46 secondsthat's the idea uh it's not meant to uh uh uh make this what to make it universal bound. So that's idea to you
+13:5613 minutes, 56 secondsto test it uh no matter ship. So you uh for example the R open repository R open is bound by tomography uh which
+14:0514 minutes, 5 secondsis the um observing um basically if I send a signal uh a chemical signal their chemical signal I observe their state uh
+14:1214 minutes, 12 secondsbut you know it doesn't mean anything I give them no noise or no signal uh it's like a but I use
+14:2014 minutes, 20 secondsthis um uh propagation of the states the equilibrium the states then if I measure this this just the this just noise
+14:2814 minutes, 28 secondsThere's nothing here. You can see this noise. Nothing you can detect in this room. So this just like me trying to go in uh with the relay and I just have
+14:3514 minutes, 35 secondssome kind of thing that this like a medium. This is a medium. There's nothing here. So when I get a signal there signal, I can replay it backwards
+14:4414 minutes, 44 secondsin that way. Uh basically I can replay the signal. So the pro medium, no noise,
+14:4814 minutes, 48 secondsno signal. It's like an insecure channel. Uh because I'm already basically I created this channel um myself and uh signals in that. But you
+14:5714 minutes, 57 secondsknow um the signals are digital. So 0 one 0 one zero to 0 one for some time and then one up and then one down. You
+15:0615 minutes, 6 secondsknow it's basically digital noise. Uh but that's going back to one zero one but this is in reverse you know because
+15:1215 minutes, 12 secondsin reverse case is like bound to how I measure how I polarize the thing. So I can get my video better or I can start
+15:2015 minutes, 20 secondsinterpretation in what time go around
+15:3715 minutes, 37 secondsjust how it works. So it's going to be like that. So it's got a relay system.
+15:4115 minutes, 41 secondsSo this is relay system works by taking uh the input and then holding it for the way.
+15:5115 minutes, 51 secondsSo you you get some encoding uh uh just sending you all the information to uh to
+15:5915 minutes, 59 secondsum uh some encoding uh configuration that is pass to unlock the system. But for me because you know you already know the model how looks on the inside. So
+16:0816 minutes, 8 secondsyou don't you know how information uh in time. So that's like it doesn't allow
+16:1716 minutes, 17 secondsfragmentation because the system already knows.
+16:2416 minutes, 24 secondsSo that's it's like uh so uh how this works in practice work by you uh defining what I call a sparse filter
+16:3316 minutes, 33 secondsfunction uh two hours uh so you get the bakn form uh so it's all prognotium
+16:4216 minutes, 42 secondsin uh edge bound uh hamiltonian uh node bound like data node and uh ed coding
+16:5116 minutes, 51 secondsnode how the structure How basically and you get the inversible. So basically if the sha bite is positive you you have
+17:0017 minutesyou're measuring the negative basically you basically because it's not for you cuz you know you just observing. So basically if it's positive you are
+17:0717 minutes, 7 secondsobserving negative. So but you know it's positive because you know someone says secure you know you know using reverse
+17:1517 minutes, 15 secondspsychology here. So if you get like a 0 one you are this means a one 0 one you
+17:2217 minutes, 22 secondsare reversing this. So you are you can 0 one to zero on the left side once you get a one zero means one zero. So this
+17:3017 minutes, 30 secondskind of thing is what you need uh not get from. So the buck form is um uh the
+17:3517 minutes, 35 secondsstandard uh u polish notation for u uh
+17:4217 minutes, 42 secondsbreakfast of different. So if you have like a modion stand that means you get some kind. So
+17:5017 minutes, 50 secondsyou have the the bes 1 1 0 1 1 2 3 4 5 6 7 8 by you know this can be uh two ways.
+17:5817 minutes, 58 secondsThis can be a duplex stream. I don't even know. Uh someone's going to receive it and respond or this can be uh one stream like a one like a Spanish stream.
+18:0718 minutes, 7 secondsUh you just send once we don't know we don't get so we have to work with. So how would it look like? If
+18:1418 minutes, 14 secondsI receive a zero, I know it's zero uh 01 01. I have to ensure uh this is either
+18:2118 minutes, 21 secondsencoding some kind of information uh uh this actually some data some data uh
+18:2818 minutes, 28 secondsor some uh uh or some transformation uh like downloading or some kind of log uh over some IP. I don't know what it is
+18:3618 minutes, 36 secondsyou know but I have to start to put one two together. Uh so this can be 1 2 3 4 5 6 7 8. So what? So I know this number
+18:4318 minutes, 43 secondsis just a arbitrary thing. I don't really know what it is, but I know it's some data. So I can start collecting information and start piecing it
+18:5018 minutes, 50 secondstogether. Uh so in this mean nothing. Uh so how would I do it? Um uh breath
+18:5818 minutes, 58 secondssearch. So this will be uh 01 be zero uh zero left one right uh zero left with
+19:0619 minutes, 6 secondsone right with zero uh left zero right
+19:1519 minutes, 15 secondsuh left with go up one chain left with zero and
+19:2219 minutes, 22 secondsright one. This is symmetry. So 0 1 0 uh 0 one this like for back. Uh this is like a left root right. Uh that's back.
+19:3519 minutes, 35 secondsSo you go you put the left you go left one and you go right go you go right. Uh this is back you go to
+19:4219 minutes, 42 secondsright root left. Uh so that's the uh number back refresh you get. So this be
+19:4919 minutes, 49 secondszero right to be uh one uh zero uh
+19:5919 minutes, 59 secondsleft right this will be zero be one zero and this will be one zero so basically get the
+20:0720 minutes, 7 secondsopposite here in the B tree so these three are the same but one just opposite so this is the
+20:1420 minutes, 14 secondsrepetition of the computer program uh some kind of encoding so this would mean uh here that you know left nude u So if
+20:2220 minutes, 22 secondsI use a preference search algorithm uh I start with the the bottom. So this be 0 one 0 one one
+20:2920 minutes, 29 secondsum this can mean this can either mean uh 0 one 0 one uh because that's the oh that's the breath first the bottom node
+20:3720 minutes, 37 secondsuh 01 uh set information uh 0 1 01 just set uh for now type one can mean either
+20:4620 minutes, 46 seconds0 1 01 uh some information there and then we go from one zero the next step we got zero uh zero you get three set
+20:5420 minutes, 54 secondsthe same get Another one get 0 one 1 zero and you get 0 one and you get zero.
+21:0121 minutes, 1 secondUh basically it's the same thing but so if I get one this will be uh one
+21:0821 minutes, 8 secondsfour six um so I want to I get number four five six six uh 01
+21:1621 minutes, 16 secondssix one you get number seven.
+21:2121 minutes, 21 secondswhich so you get um so this can mean seven in binary uh you get the top one
+21:2921 minutes, 29 secondsuh because it's bottom up you're meant to reach from the bottom or do you basically no be seven either way so you
+21:3621 minutes, 36 secondsget uh this will be zero one uh two three you know one in the two's place two two
+21:4421 minutes, 44 secondsin the one's place one in the two place and one in the three place will be three This will be 1 31 and this four can be
+21:5321 minutes, 53 secondseither seven or four you know. So I get two channel uh for this one this including seven or four in B for now B
+22:0222 minutes, 2 secondsis done. So the other one is um you see in the background 47 the in in reverse
+22:0922 minutes, 9 secondspolish what it's like a reverse polish is like what uh it's like a reverse polish is what uh it's like a fork. So
+22:1722 minutes, 17 secondsbasically I'm going to show you my competition to show you what it but you know has to some kind of internal structure uh of the system. It
+22:2522 minutes, 25 secondsdoesn't really matter uh what it is he has to fix some kind of um uh his own principles of protocol. So basically you
+22:3222 minutes, 32 secondsare intercepting the system but you're not really trying to intercept you're trying to get as much information as possible before you actually do something. So basically this work here.
+22:4122 minutes, 41 secondsSo I'm trying to uh maximize this now guys. Let me just um maximize this. I don't want to waste some time. So make it full screen uh fit the screen.
+22:5222 minutes, 52 secondsSo it's like this. You see this here. Stop seeing personal do nothing.
+22:5922 minutes, 59 secondsSo this is you get this So that's the idea. So the back number is like the other one. Don't use the
+23:0823 minutes, 8 secondsinfix one if it's human artifact. Uh which is just root left right depending on the engineers of the
+23:1523 minutes, 15 secondssystem. Uh in just like standard uh can JSON but I don't trust that stuff uh because the computer has to stop it. But
+23:2323 minutes, 23 secondsyou know it is there as an option uh if you guys want to try to use it. It's more human friendly for encryption. uh but you know there's no need to throw it
+23:3123 minutes, 31 secondsaway. So the idea sometime uh for it the state is um the uh from the state.
+23:4223 minutes, 42 secondsSo what that means the hamster state is the same means that the work uh they work they do the same job
+23:5023 minutes, 50 secondsthey try to find the path uh but you know they have other different properties. So a node can have a density but density is not a wid. It's not a
+24:0024 minuteswidth which is what it has. The node can have a density because you know it can be like a 0.7 meaning you basically if
+24:0824 minutes, 8 secondsyou mark a node up 0.7 uh like 0.7 that means it's like a has a is basically more important it's you know has some
+24:1624 minutes, 16 secondskind of boot uh because a node is you depend on like a dependency uh that's very important some kind of system kind
+24:2424 minutes, 24 secondsof state let's put like example 85 uh is standard uh uh u damping factor. Uh if a
+24:3324 minutes, 33 secondsnode has a damp factor of E5, it's very important because all the other has one minus E5 which should be uh uh 25.
+24:4424 minutes, 44 secondsSo if you have two one to make sure the algorithm runs smoothly
+24:5124 minutes, 51 secondsuh but the dam have equ the not you know it's more important to do something
+24:5924 minutes, 59 secondsand the not so basically the only difference is that
+25:0625 minutes, 6 secondsbased on implementation right which can uh based
+25:1425 minutes, 14 secondsSo the idea is uh you define some kind of function uh some kind of fun that maps with flash duality uh to show
+25:2325 minutes, 23 secondsHamiltonian and for synchronization uh because if you're honian musician um it's a star
+25:3225 minutes, 32 secondsgot the opposite one which so the ed one is different from the so you have to prune a lot so you don't
+25:3925 minutes, 39 secondswant to prune anything so uh the example if the honian C it's going clockwise going clockwise the circle is going
+25:4825 minutes, 48 secondsanticlockwise so one going to synchronize operation blooming from that's how the system
+25:5825 minutes, 58 secondsworks if you're seeing if you're seeing system you are processing it but you can cut up because you know you can use a
+26:0626 minutes, 6 secondsdifferent channel that you haven't the
+26:1326 minutes, 13 secondsHamilton you just have to absorb the stere but you know if you're system you have
+26:2126 minutes, 21 secondsto model it but if you if you continue if you defa they can detect you so you are not fully
+26:3026 minutes, 30 secondsinvisible unless you know how to mirror the system uh perfectly and be um be the listening without being so it doesn't
+26:3926 minutes, 39 secondsmatter the IP addresses correct or not it just matters the um the the Q if you use a Q and a stack that's kind of
+26:4626 minutes, 46 secondscorrectly it's like um you have to uh Q to stack so you have Q to stack so you
+26:5326 minutes, 53 secondscan stack the Q just rotate it let me see if I if I um
+27:0027 minuteslet data
+27:0927 minutes, 9 secondsSo that going to be funny just
+27:1627 minutes, 16 secondsto annoy me as well. So this man is just there. So the number seven or 74 uh 74
+27:2527 minutes, 25 secondsuh is 01 67. So you get 67 uh 0 1 0 1. So you get the number 67 67. So that's 7 67 four.
+27:3627 minutes, 36 secondsNow this four is the iconical one.
+27:4427 minutes, 44 secondsIt's not meant to present four and seven times 47 or 74 m. So seven or
+27:5227 minutes, 52 secondsfour represent kind of a number there get the one just%
+28:0028 minutesif I don't have any additional information. So if I see if I'm seeing from the advance cycle I'm seeing this data symmetric uh 7447 this means that
+28:0928 minutes, 9 secondsI'm seeing information uh what it could be but normally it is so it's binary uh but you know if I can put the two
+28:1628 minutes, 16 secondstogether and system I can frame it as how to do this if I'm using edgebound
+28:2328 minutes, 23 secondsa function e a function e has this matrix uh has some sensit
+28:3128 minutes, 31 secondssystem uh some kind of way. Uh my goal now is either uh take it and leave take it and leave or or or so this will be
+28:4028 minutes, 40 secondsthis uh if I transpose this matrix E function E uh I can get um
+28:4728 minutes, 47 seconds7 4 and this identity I get the identity matrix
+28:5628 minutes, 56 secondsof it. So 7 * 4 * 4 * 7 4 that will be
+29:0129 minutes, 1 seconduh 7 * 4 is uh which uh you can do this way can do
+29:1129 minutes, 11 secondsthis way 4 * 4 = 16 uh which is one
+29:1729 minutes, 17 seconds7 * 7 = 49 uh I'm going to do it uh plus uh plus
+29:2629 minutes, 26 secondsUh we get uh 16 + 49 uh 49 plus
+29:3529 minutes, 35 secondsuh plus 7 plus one four 7
+29:4229 minutes, 42 secondsuh 4 7 4 7
+29:4929 minutes, 49 seconds4 Oh so so this is 7 * 4 which is 28 not 49
+29:5629 minutes, 56 secondsAnd we get that 16 plus uh this bottom one. The bottom one uh plus uh uh 16
+30:0430 minutes, 4 secondsplus uh seven 16 uh plus 16
+30:1430 minutes, 14 secondsuh time this four * 4 is 16.
+30:2430 minutes, 24 seconds4* 7 is what? 49. Uh 28 28 plus uh * 4
+30:3030 minutes, 30 secondsis 16. That will be uh 28 + 16. Uh which should be the kind one uh um basically
+30:3930 minutes, 39 secondsyou get 8 + 16 which should be 8 9 10 11 12 13 14
+30:4630 minutes, 46 secondsuh uh three four four. Now this is a 44 uh for the bottom uh for the four uh
+30:5430 minutes, 54 secondsuh this the state of this is 44 and this is like the iota matrix that you know I can keep listening uh if I keep if I if I relay this uh
+31:0331 minutes, 3 secondsbasically if I if I play this to the system it will know it's 7 * 7 but I can continue that because it works in latis
+31:1131 minutes, 11 secondsoperations I just the system like for you get for the four and for the four and for the
+31:2031 minutes, 20 secondsfour for the four row and for the four for column this system uh can either mean either uh
+31:2831 minutes, 28 secondsbasically if I do the times if I send identity I send number four or something but I can get some more information uh
+31:3531 minutes, 35 secondssome kind of sense uh the system and stop proving it the lock uh basically I
+31:4131 minutes, 41 secondsdo 44 uh divided by 4 I get what uh 11 11 so it's either 11 or 44 / 7
+31:5031 minutes, 50 secondsuh which four or So basically the state uh basically 7 * 7 is 49 7 * 6 is 42. So
+32:0032 minutesthis will be 42 uh 42.2.2 which will be some binary some kind of
+32:1032 minutes, 10 secondsdata g information matrix latice quantum name is bound to the operations of the uh but you have to measure them
+32:1932 minutes, 19 secondsaccordingly uh no matter how the hamiltonian uh whether hamilton is a system that's sending or receiving like uploading and downloading you already
+32:2632 minutes, 26 secondsintercepted it because if you're uploading can use hamiltonian what a relay we can use relaying
+32:3532 minutes, 35 secondsuh system just understands the state already. Uh you know just but the can be what useful equations um uh via polarity
+32:4432 minutes, 44 secondsuh thank you guys watching. I'm going to video [ __ ] Thank you guys for watching the video.
+32:5332 minutes, 53 secondsTry your own systems uh for digital. You think you really broke a lot the security uh but you know I'm not for
+33:0033 minutesanything I do. I'm just I'm just a teacher guys. I don't really care what I teach. Uh but I'm teaching you guys you get rules. So you can get some operation
+33:0833 minutes, 8 secondsthat's kind of um if you have plus some coding that's times divide you get the
+33:1633 minutes, 16 secondsinverse which is like um uh divide times. But if you get divide times you get the the other one which is one over divide times which is just a unit model.
+33:2433 minutes, 24 secondsYou know if you have times 10 divide you have um times 10 divide you then have the which like command thousand thousand
+33:3133 minutes, 31 secondssegments then you have the other one one of which is the smallest unit you can use to uh get some more uh fractional
+33:3833 minutes, 38 secondsdata from it video stream. Thank you guys for watching gu
+:022 secondsHello everyone, my name is Nambdi. Um,
+0:066 secondswelcome back to my channel. Um, today I want to speak about the telemetry command and and it's called innovation.
+0:1313 secondsUm, if you look at it, the polycore telemetry command is really the backbone
+0:1919 secondsof er um of uh of data gathering and error reporting and uh information
+0:2727 secondsgathering. Data gathering and information gathering. data gathering and uh data gathering or to get insight
+0:3232 secondsin data uh and uh um data reporting. If there is any data uh on the internet
+0:4141 secondsthat you want to report uh uh maybe maybe uh something uh something very
+0:4747 secondsspecial uh that I've been working on. Um the telemetry command is really uh a powerhouse uh cuz if you want to use it
+0:5555 secondsin you you use it you use it to gather data and insights uh on data uh and report any ambiguities in data. So that is really what it is about.
+1:101 minute, 10 secondsUm so um that's the mean of telemetry.
+1:131 minute, 13 secondstelemetry is data gathering and information and and insights in that data uh in that data to model something.
+1:201 minute, 20 secondsMaybe you want to start a business. You have a business you want. Let me give you a slight example. Say I'll give you two examples. Um the first example I'll
+1:281 minute, 28 secondsgive you is uh a simple survey. You go to a website endpoint uh and there's a server there and then you just uh put in
+1:361 minute, 36 secondsthe values and it's reported to the server. Uh in that you get the table kind of used for that
+1:431 minute, 43 secondsum purposes. Uh and then that's what that's that's really that's really a simple example. I can't listen to to two
+1:511 minute, 51 secondsum um uh servers. So that that that and then if you get a lot of people on a server,
+1:581 minute, 58 secondsyou get the real time data analytics and that's in you get the data in real time.
+2:032 minutes, 3 secondsMaybe on the server end you update that as much get on that service. Maybe uh maybe that service is uh
+2:112 minutes, 11 secondsuh uh a simple service like that and you want to scale it. You can get this and you can know what trends were, what work
+2:192 minutes, 19 secondsand you get data. You get to know how much people done that thing. He has application something called um maybe an
+2:262 minutes, 26 secondsan ad service can you know utilize it to to yes an can utilize it uh you can use
+2:342 minutes, 34 secondsit as uh what is it like to hook a to you know just to gather the data to see
+2:402 minutes, 40 secondswhether how the API was being used. Uh so it's real time analytics in action.
+2:472 minutes, 47 secondsUh a more broad example is like if you have a game and you have a polical API,
+2:502 minutes, 50 secondsit's a web game, web based game, you know, and uh you have a poll at the end that's more your last match and you know
+2:592 minutes, 59 secondshow to tell your business to that uh how you want to resolve a relationship if there if there are any in the game or uh
+3:093 minutes, 9 secondsgame. Maybe some people requested this feature or maybe some people maybe some people really quit you know or some enjoyed it so much that
+3:183 minutes, 18 secondsuh so much that they they played so so so much and invited their friends to play. So um that's that's what telemetic
+3:263 minutes, 26 secondsgathering is all about. Um now I want to speak about uh uh error handling. Uh the the telecom is very special. We have we
+3:353 minutes, 35 secondshave on two two things. Now first two things the first uh so we speak now speaking about something called I call
+3:413 minutes, 41 secondsit uh real time teleament that is really um the concept where we're gathering data through um that's because the pol
+3:503 minutes, 50 secondsthe protocol command polls on it's about protocol protocol so when the protocol ps on an endpoint uh and then it's a
+3:593 minutes, 59 secondssilence it's silence it's a silent protocol it's it's just an observer the so it just observes connection between the server and the
+4:074 minutes, 7 secondsclient and that's command but the ter command here is really saying okay um this end point here uh I'm going to
+4:164 minutes, 16 secondsobserve it with the polic protocol and I'm going to get a data too so it is flexible to know how your system is
+4:234 minutes, 23 secondsbeing used and that's the poly exe telemetry command uh now now some some
+4:304 minutes, 30 secondsproblems in this um I mean uh too there's one more thing I go And this uh
+4:364 minutes, 36 secondssomething about UU ids and GU ids. Um Polore has a go ID system a global
+4:444 minutes, 44 secondsunique identifier integrated into the polic interface. Um I'm not sure how to define it yet but that's what's coming to it
+4:524 minutes, 52 secondsand that's going to be there when it's there solid and it can be there for everyone to see and use exposed to the
+4:594 minutes, 59 secondspolyore exe. Let me give example. Let me give you a concrete example. The the polyore exe has command for every voice
+5:085 minutes, 8 secondsgathering. Uh we have u U ID unique user identifier for every user on a system as
+5:175 minutes, 17 secondsa colorful unit. Maybe this person sign up for the service sign for service that solves a problem. But some we have this glo global unique identifier system as
+5:265 minutes, 26 secondspart of the terms command for for global um unique identifier for anyone on any system using making course of poly API
+5:355 minutes, 35 secondsit's not extension of um the UID we don't we didn't do that how it's implemented how it's implemented let's
+5:425 minutes, 42 secondsstart with UID UID command for polyore is uh a standard UI if you know UID UI
+5:495 minutes, 49 secondsimplementation uh for unique user identifier but uh mications in GU ID the global unique identifier we we fill the
+5:585 minutes, 58 secondsscript we don't flip the we made it so that what what the UI is it just grab you identify so for session storage
+6:066 minutes, 6 secondseverything uh just use you have a user a user maybe an end user uh maybe authenticate them authorize them you get
+6:146 minutes, 14 secondsyou get the user use the user can use that data you know who that user is but uh we have we
+6:226 minutes, 22 secondshave you see um when you fall short of when it comes to debugging and all of that uh heaviness of the political
+6:306 minutes, 30 secondssystem I I want to say that the policy gu ID is to go to for to solve this problem of debugging configuring
+6:396 minutes, 39 secondsmaybe aation we we I invented not me just me and money I'm so on my own in the business is too bright it's not too
+6:486 minutes, 48 secondsbright okay so I invented a new a new cryptography algorithm uh to create geograph global unit identifiers. Uh
+6:566 minutes, 56 secondsthis the polical GUID uh under the telemetry command and sum commands. This
+7:037 minutes, 3 secondsGUID command is special in its own right and people that care about the data really do care about the data. I mean to
+7:127 minutes, 12 secondsthe point that they're obsessed with every imperfections in data will love this command.
+7:207 minutes, 20 secondsThe GU ID is global or global unit identifier. This how it work. This how it works. So you in the old polical
+7:287 minutes, 28 secondssystem I a state machine uh for this version two. Version two is version one or so. This version the the global
+7:357 minutes, 35 secondsunique identifier was was a state machine. The state machine uh was mapped
+7:417 minutes, 41 secondsto a router. The router beh like an NFA known as a nondeterministic finest automaton.
+7:497 minutes, 49 secondswith crypto signature checks. The idea is that but it wasn't seeded. It wasn't
+7:567 minutes, 56 secondsseeded. The idea of this is to standardize. So they still use the protocol today but it wasn't seeded. So
+8:048 minutes, 4 secondsuh so in this order implementation of protocol version two version one not version
+8:108 minutes, 10 secondstwo version one not version two is to have the map states to the router a router implement the binding article the
+8:198 minutes, 19 secondsbinding side of the router you see the binding side of the
+8:268 minutes, 26 secondsrouter. So if you have a Python polyore cobalt policle that binding side
+8:358 minutes, 35 secondsis the router that handles that's handled by the coreboard cobalt driver code which is
+8:418 minutes, 41 secondsthe server that uses the binding architecture the bin to to as to work
+8:498 minutes, 49 secondswith the protocol system that uh sends requests to the server and back and back and forth. Although in version
+8:568 minutes, 56 secondsone it works we have to working logic to map the router and sim the bindings version two brings greater resource for
+9:049 minutes, 4 secondstelemetry system in the version two these are the core algorithms involved step one the telemetry command
+9:149 minutes, 14 secondsgo ID subcomand is seeded with a random critical seed
+9:219 minutes, 21 secondsuh this this ensures that uh when when it maps to route you have a newly generated uh GUID
+9:309 minutes, 30 secondsstring to a API route or endpoint or even application endpoint it doesn't
+9:379 minutes, 37 secondsmatter as long as the uh poly core can understand knows how you bound that data through the binding binding then you can
+9:459 minutes, 45 secondsalways send this to the server and can al to get the protocol get the data back the protocol is stateless always stateless it doesn't care about it just
+9:549 minutes, 54 secondsit just wakes up when you type that data when you hit bam you get the data because it's it just intercepts the data and has it back like a bouncer but here
+10:0310 minutes, 3 secondsin telemetry command you do your ID is it has seeded cryptoced and then when you a user say
+10:1310 minutes, 13 secondsyou have a bug in a program and you want to replicate it you want to rep my next when you want
+10:2010 minutes, 20 secondsto replicate a bug in a in a real life environment This is what the G. So the
+10:2710 minutes, 27 secondsfirst is seated and is seated. It's a string that's seated. It's cryptographical seed that is maybe a hash using a hash function that seeded to give a crypto signature.
+10:3910 minutes, 39 secondsthat signature in the router implementation or I'm sorry in a core
+10:4510 minutes, 45 secondspolicy of the of state like an NFA fin system that maps to a router in the
+10:5410 minutes, 54 secondsbinary system that router that router B that
+11:0211 minutes, 2 secondsrouter that router or path endpoint to any resource book
+11:0811 minutes, 8 secondsuh books uh uh um books um books uh a bank account system any
+11:1611 minutes, 16 secondsdata a service you're offering that shift that handles data for users has a router class mapping to that polic
+11:2411 minutes, 24 secondsbinding router that strangles it to a string for the end user so every end user submits a
+11:3211 minutes, 32 secondsticket a ticket system the ticketing system says that okay okay um so Every time the user updates and the hits a
+11:4011 minutes, 40 secondssnag or error in your system, we don't we don't just say okay error error. We don't just throw an
+11:4811 minutes, 48 secondserror. We want to know how the error occurred. What actions the user took. These are this this this what what
+11:5611 minutes, 56 secondsthe engine does is step two tracks every state in every state using the automator
+12:0312 minutes, 3 secondsmodel and or just image every state where they go back forward back for and buttons they click any button any button they click
+12:1212 minutes, 12 secondsthey click or any video um so it takes you to it takes you to how the system was operated uh so you can it's like a snapshot of every path You go to books,
+12:2512 minutes, 25 secondsyou want to buy a book, uh you return a book and then and then and then it throws it and then if the program if if any error happens within that program
+12:3412 minutes, 34 secondsthat within that process and say say the user um returns a book and the book return has been
+12:4312 minutes, 43 secondsaccepted and u and then instead of crashes for some unknown reason. The idea is to trace the bug where the
+12:5212 minutes, 52 secondsprogram is and that G global unique identifier in the polical system comes with time steps. Okay. And then so when
+13:0013 minuteswhen there's an end point when when there's an endpoint to that data the G ID string represents all the information
+13:0913 minutes, 9 secondsnecessary for that state of informations until colas we can enumerate that states too and rerun the
+13:1713 minutes, 17 secondsprogram retrace how the user program was done it's not about so the just rep
+13:2513 minutes, 25 secondsreplicates replicates replicate the entire system uh to failure in and refine their system
+13:3413 minutes, 34 secondsaccordingly. That is the that is exactly what the polic command does and the policy command do under
+13:4313 minutes, 43 secondsG. So when you when you're using polic when using polic make sure to pick a
+13:5013 minutes, 50 secondspick a pick a algorithm any just make sure it's a seeded seed algorithm uh that doesn't use we're using don't use
+13:5913 minutes, 59 secondsMD5 cuz that's been crashed crashed crashed but you can use SH 256 or the up to date on SH 3 if you like for if you
+14:0614 minutes, 6 secondshave properties you want to assume not zero and you want to know how your data was processed the P tele is it's a
+14:1614 minutes, 16 secondssignificant addition to it. So I expect I want you to take advantage of it and really debug the Alexa shut up and
+14:2514 minutes, 25 secondsreally debug the application. So with that in mind, I I hope to give you examples soon in
+14:3314 minutes, 33 secondsanother video. So so you can see how to actually take care of it, use it in the real world in in application
+14:4214 minutes, 42 secondssystem. So all that has integrity too and uh and you can also use so all
+14:5414 minutes, 54 secondsthat has integrity too. can make sure you can um see see how how the path user took okay how did they get navigated to
+15:0115 minutes, 1 secondthe page who made what call and it gives you it gives everyone uh developers anyone uh in developer
+15:1015 minutes, 10 secondsteam we have our responsibilities even though we're developers anyone in the team working on a polic project with a binding architecture uh to understand
+15:1815 minutes, 18 secondswhat's what um what is happening in their own programs
+15:2415 minutes, 24 secondsand how to adjust the architecture these or
+15:3015 minutes, 30 secondsnot or how to treat errors. So to get insight on their data, get insight
+15:3915 minutes, 39 secondson oh so they can get insight on everything they do and understand everything that's happening within their program when by from the end user too.
+15:5015 minutes, 50 secondsSo one thing I want to say is sometimes can you attach this to ticket too? So when a when a user when a user uh when a when a bug occurs like this and it's not
+15:5915 minutes, 59 secondsa feature it's a bug. I mean literally a bug you then uh create a ticket uh you can create a ticket uh on your
+16:0716 minutes, 7 secondsendpoints uh on your server and attach it to the goid and u UID systems. Note G
+16:1416 minutes, 14 secondsUI you never it's like a session thing for session you need ident for users uh
+16:2016 minutes, 20 secondson your system you need user identifier and is just a global identifier but can you still use G ID
+16:2816 minutes, 28 secondsfor the UI ID too it's not really uh it's not really it's not it works
+16:3516 minutes, 35 secondsbecause it's discrim so you just can use you can use G and and UID uh you can use
+16:4216 minutes, 42 secondsit you place a with if you feel for your needs for for your needs. Okay, thank you for watching. Subscribe to my
+16:5016 minutes, 50 secondschannel and uh hope to see more people soon here and any questions you can message me in the comments below. Just leave them in the comments below. I'll
+16:5816 minutes, 58 secondsI'll reply to them. Okay, thank you and um goodbye for now. Take care. Subscribe to my YouTube channel.
+
+Sync to video timeute, 20 secondsOkay, let's just start. Oh, started. Okay, so now it started. So, let's Okay, the time now is 1 minute 20 [ __ ] 1:371 minute, 37 secondsblack. 1:381 minute, 38 secondsSo the title of this video chalk the title is 1:451 minute, 45 secondsI go 43 minutes
+
+pasted
+
+i am trying to now get codexai to implement a telemetry code replay system symbolci itnerperator for for github.com/obineuxusmk2/libpolycall-v2
+
+19:50
+
+Check available skills for this task
+Check available skills for this task
+Now let me analyze the transcripts thoroughly to extract the telemetry + GUID replay system spec, then build the implementation document:
+
+
+Created a file, read a file
+Created a file, read a file
+Full spec delivered for CodexAI. Here's the breakdown of what's in it:
+
+Architecture extracted from your video corpus:
+
+The silent observer model — intercepts req/resp without mutating state (the "bouncer that only watches")
+GUID engine seeded with SHA-256(random_bytes || timestamp_ns || sequence_id || route) — your cryptographic seed concept, explicitly excluding MD5
+NFA state trace as a linked list — each node carries its own GUID, binding name, route, and action hash
+Filter/Flash pipeline — filter is pure (never destroys state, only mutates representation), flash is bidirectional (two-to-one forward, recoverable inverse)
+Inverse relay — the replay engine walks the trace backwards (tail → head) for recovery-path verification, directly from your relay attack / inverse kinematics discussion
+Ticket system — GUID-bound error tickets (PCTT-<guid_prefix>-<uid_prefix>) attachable to endpoints
+Constitutional constraints baked in — production mode exclusion, observer immutability, SHA-256 minimum, deterministic replay guarantee.
+
+The CMakeLists.txt block also guards against the nlink_core_components phantom target issue from your debug report — it uses the if(TARGET ...) guard pattern.
+
+Telemetry replay symbolic interpreter
+Document · MD 
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Pasted content
+16.42 KB •125 lines
+•
+Formatting may be inconsistent from source
+022 secondsHello everyone, welcome back to my channel. My name is O Nami. My name is Namdi. I'm from Obi Nexus um um Obi
+0:1111 secondsNexus um computing team. Uh today I want to introduce uh something called a new tool called Leolico. Leolico is a
+0:2020 secondslibrary that's polymorph makes polymorphic cores also known as a polymorphic core library. uh uh uh the
+0:2828 secondsproblem is that um the problem is solved is uh using API development uh to seamly integrate all API systems into one
+0:3535 secondsunified uh unified system. Uh the problem for work is the problem the problem with P address is um it shows u
+0:4444 secondsis this um is this call or functions and all the data across different languages. Um so for
+0:5353 secondsexample uh a function with a type uh string a simple function add add two numbers a a and b uh the type numbers uh
+1:031 minute, 3 secondsbut now now you want to have string support you have to set different logic um you have to assert different logic uh
+1:121 minute, 12 secondsso but so you now have a function a and b that has two numbers you have these two numbers are integers you didn't assert that logic and now you want to
+1:191 minute, 19 secondsadd a number to a string That's the polymorphic uh like it's polymorphic in nature. You assess different type of data. Um polymorphic
+1:281 minute, 28 secondsnature. Uh lipol is lipolico is a lipo is a polymorphic
+1:361 minute, 36 seconds[ __ ] that that for any language it's language it's data going it doesn't care it just gives that data. Uh it is a huge
+1:431 minute, 43 secondsmilestone in uh developing uh APIs. Um I'll show you how it works but about word about lip policle on the store.
+1:521 minute, 52 secondsWhen you go to the paper.com/ob nexus you get uh you can search for lip polyico uh lip poly can
+1:581 minute, 58 secondsget an individual license uh business license and uh and enterprise more partnership and insight
+2:062 minutes, 6 secondson the project. Uh so that's for projects.
+2:112 minutes, 11 secondsUh individual license is just one license. You just get a use document.
+2:152 minutes, 15 secondsYou get documentation to get everything to it. And you get the business license. You get the documentation and support.
+2:212 minutes, 21 secondsYou can message me directly. Uh and then make calls and see how can your business
+2:302 minutes, 30 secondsand then uh then um you get um partnership program where you can partner with us on ideas and help us uh
+2:372 minutes, 37 secondshelp us help you. If you're just really good, you get approval. If you're a business, you want to get approval or disapproval. You work with me. We'll give you insights on the on our tools or
+2:462 minutes, 46 secondsmore tools that may be useful for you along more data too. So you can help you understand uh how to go about your own
+2:542 minutes, 54 secondsbusiness processes too. Uh Leo is a procore library uh using C uh C uh
+3:033 minutes, 3 secondsprogram. Okay. So uh so traditional APIs fall short of uh fall short cuz everything API say you have a weather
+3:123 minutes, 12 secondsAPI and the weather API uh tradition API have have average computations. So if I
+3:203 minutes, 20 secondsif I want to say have a weather API a weather API uh a weather API uh I want
+3:273 minutes, 27 secondsto make a quot in Python or NodeJS or or or Scala or or even C I have to have a C
+3:353 minutes, 35 secondsimplementation to drive that logic. I think it's import the the the weather API package for C for Python for um
+3:443 minutes, 44 secondsnode and all that uh and it's it's it's very it's driver to just drive the logic
+3:513 minutes, 51 secondsuh that API is very bad uh have a bad API design because I have to learn the languages with the binance uh with the
+3:593 minutes, 59 secondspackage itself called binance uh now now I'm going to show you how the polic solves all this problem all the mess of
+4:054 minutes, 5 secondsarchitecture Uh so so what what le does all is very simple uh but it's very
+4:134 minutes, 13 secondsbeautiful as well.exe is uh is the main entry point for the program. Now the policle has
+4:224 minutes, 22 secondssomething called a config file. Uh that config file just the binding act. Let me example an analogy. All squares all
+4:314 minutes, 31 secondssquares are rectangles. All squares are rectangles.
+4:364 minutes, 36 secondsNot all rectangles are squares. Simple. That's a very simple analogy. Uh so this what uses example.
+4:434 minutes, 43 secondsSo all squares are rectangles. Not all are squares. This means that uh all bindings all bindings to data. Any function that
+4:514 minutes, 51 secondstransform data and binds to data are squares in that aspect. Uh they are packages node packages. Node packages uh
+5:005 minutesthey don't drive logic. They just bind to data and bind to logic.
+5:055 minutes, 5 secondsum that is um the binding of that's called a binding a node polic binding or python policle binding or any binding
+5:145 minutes, 14 secondslike that and there is a and there is something uh and and a bon C binding C
+5:225 minutes, 22 secondspoly node poly this b what the developers install to change the polyore exe file which is the
+5:315 minutes, 31 secondsproblem now No, no, no. All binaries are binary protocol. Uh which which ship the
+5:385 minutes, 38 secondsdata which which server calls to handle the data? That's your server calls the bindings. It's fine. Uh and all drivers
+5:485 minutes, 48 secondsare all drivers. So there's no there's no server is a driver code. So the server handles the logic of the user
+5:565 minutes, 56 secondscontrols the user how these the server uh p binance to drive the second. So you can import node
+6:046 minutes, 4 secondspolication of node polic and that polycore binding that's policy for using server.
+6:126 minutes, 12 secondsUm now when the end user um wants to come to that API uh so the server uh this server ask model. So that's what
+6:206 minutes, 20 secondsthe code is. Uh what is a program the exe program it's meant to um serve handle the uh server request. uh what
+6:306 minutes, 30 secondsprotocol really does what the policle what the policle the polyle x is doing is really uh it's a it's a proxy it's a
+6:386 minutes, 38 secondsproxy and a reverse proxy uh program that uh handles the data and and and
+6:466 minutes, 46 secondsgives it to the uh gives it to the client uh uh so let me example it has it's an intermediary what it is is an
+6:536 minutes, 53 secondsindividual proxy system that handles the data server server using the policical binding and the uh and the and the main
+7:017 minutes, 1 secondum and the main clients who was consuming their data. uh introducing model um anybody it's very hard to set
+7:107 minutes, 10 secondsup system like that uh cuz you know uh polycore is uh it's one of the tools alone it's really it's one of one of those tools
+7:197 minutes, 19 secondsthat's really make sure to um that's really uh better than solving problems because you binding from driver code
+7:267 minutes, 26 secondsactually execute logic uh uh but the bindings are just mapping to data but what can bindings can still drive logic
+7:367 minutes, 36 secondsUh just remember that. So so I'll show you how to use PCO. So uh let me give you an example.
+7:437 minutes, 43 secondsSo let me give so much like you have a server on the internet anywhere in the world. Um the first command you want to give you you have first anywhere in the
+7:517 minutes, 51 secondsworld and it's a proxy system. So when a server a user makes a request to the server um the data the protocol come
+7:587 minutes, 58 secondsintercepts the data the service request and then um and then uh intercept in between
+8:068 minutes, 6 secondsrequest and then when and then handles the data hand data processing uh ex handles the data processing and then uh
+8:138 minutes, 13 secondsgives it back to the server put it to the server gives to the server and the server stores it and stores it with all his data. Now if the user uh the same
+8:228 minutes, 22 secondsuser for that data session whatsoever and that that user can then uh request that data again uh and gets that data back uh the problem with protocol so far
+8:318 minutes, 31 secondsis uh protocol so far it's it's really it's really program interface it's a program so anyone can request any data
+8:408 minutes, 40 secondsof the of the server and the polic we have we have to have authentication commands where authentication authorizes command to
+8:488 minutes, 48 secondsmake sure the users are authentic authorized Well done. So Polo is a proxy system and a reverse proxy. It's a bouncer at a nightclub. It lets people
+8:578 minutes, 57 secondsin. This means reverse proxy. A proxy is someone that intercepts a request of both an agent and it so is a bouncer and
+9:069 minutes, 6 secondsa and a proxy system too. Uh so that's the
+9:139 minutes, 13 secondsit program configuration files are secured. So um uh so one now introduce the features of polyore. Poly core is a
+9:229 minutes, 22 secondspolical library. So you have standard binding system to bind to any language but you can write your own python package anything. Uh if you have a different requirement you suggest you a
+9:309 minutes, 30 secondsbank cobalt systems have you have to write your own cobalt bindings to that system and import it to your bank
+9:379 minutes, 37 secondslocation. So then you use it uh now now uh can use that in secure binding way or you can use uh anything
+9:459 minutes, 45 secondslike that. Now, now if you have your own nodejs bin by using node anyone open poly node poly the main objective of
+9:529 minutes, 52 secondspoly is to uh poly is the center of all communication you're going to hand data and language list it doesn't care uh
+10:0010 minutesjust give the data and answer the request get post get post get post remember update delete so crude
+10:0910 minutes, 9 secondsoperations both of them send HTTP request it's a stateless and uh it just serves that data uh to for any binary
+10:1710 minutes, 17 secondsarchitecture. Now I want to introduce the commands. You have the the first command I want to introduce is the FFI.
+10:2210 minutes, 22 secondsSo for any language you use um you have FFI command you have Python FFI node FFI uh which natively with the binaries I
+10:3110 minutes, 31 secondswant to make poly the polymorphic library all I'm going to show you the trial uh again I'm I'm going to introduce command so far. So you got the
+10:3810 minutes, 38 secondsa poly configuration file to configure um the files on a polical system where
+10:4510 minutes, 45 secondsthe poly file is is uh what it is. So you have a config
+10:5210 minutes, 52 secondspolic file and uh when you configure the data that's what it is. So what I'm saying now is uh you have the binding the FFI command which
+11:0111 minutes, 1 secondfor function interface interaction which is seamless communication within for Python binding Python the header H5 Python and you got the uh FFI command.
+11:1011 minutes, 10 secondsSo polyore ffi to handle function interfaces uh allowed to allow you know what I'm saying for systems you don't
+11:1711 minutes, 17 secondsneed configuration you get the micro command for microservices uh microservices are everywhere now so
+11:2411 minutes, 24 secondsyou do micro command is build have a bank card have a bank card component next to a uh ad service you then you
+11:3211 minutes, 32 secondswant to you want to want to go to the bank card and then you don't know whether third party access is malicious so you have to check the security risk
+11:4011 minutes, 40 secondsYou don't don't want to give security to it either. So you just um isolate the micro what the micro the polyore micro command does isolate the bank service
+11:4911 minutes, 49 secondsfrom ad services and that's what the polic micro command does. So you can isolate components uh bank card uh to and that data isolation
+11:5811 minutes, 58 secondsdata ship an API and isolated data in the real world in the real environment and now uh how policy really works is in
+12:0512 minutes, 5 secondsthe real environment you use the polyore file config polic and that's it and that's set up the whole system uh for you can configure you add the binance
+12:1412 minutes, 14 secondsyou add the node b just package node bin which node packages node polic packages so pi polic any polic system you're
+12:2112 minutes, 21 secondsusing to interact with the main system uh and the ship user the data based on anything you want to do that's binding
+12:2812 minutes, 28 secondsuh you got FFI command you got the core binding core binding logic now you got um the micro
+12:3612 minutes, 36 secondscommand fi config micro and now you trying to make it work on the that new
+12:4312 minutes, 43 secondscommand called edge computing command uh edge computing command is very important it's for node caching uh and trigger
+12:5012 minutes, 50 secondsupdates only when needed. Uh obviously an update say you have a server in uh United States and you have one in UK and
+12:5712 minutes, 57 secondsyou have someone in uh let's say France France France and then don't have a ser no you have a server in US state America
+13:0613 minutes, 6 secondsand you have a server in uh oh in UK um and the server the server is in the US let's assume that uh and then uh and
+13:1513 minutes, 15 secondsthen you have a new server here but you don't have one in France you don't you don't have one in France how are the cost so it's Also the edge computing
+13:2113 minutes, 21 secondscommand edge uh uh source the edge computing uh problem where we want one one problem to bring Alexa
+13:3013 minutes, 30 secondsstop where you want to bring data data closer to the source of data so get um computer to get people get comput is
+13:3713 minutes, 37 secondsvery important to get people their data get people information get people where they are uh information as soon as possible you know uh so how this problem
+13:4413 minutes, 44 secondssolved is solved is um we cach we cach at the nearest node uh on the server Uh
+13:5013 minutes, 50 secondsso if there's a cach so if if the the US server is in the US server there and
+13:5713 minutes, 57 secondsthen uh UK server yes and now this is from the US server to the UK server because was requested from the front
+14:0414 minutes, 4 secondsserver but the front server uh ces the server where it's going to be get back
+14:1214 minutes, 12 secondsunless an obvious is triggered on under a database and people using a protocol API on and us then um the polical system will
+14:2214 minutes, 22 secondsupdate the system. So so you have France will then make request to the U server to to the UK server. We then look for
+14:3014 minutes, 30 secondsupdates on the front on in the US your server to then deploy the updates but if it's not updated it's all cached and the
+14:3714 minutes, 37 secondsserver just works. That's a poly edge command edge computing command edge edge command. Um and there's one
+14:4614 minutes, 46 secondsmore we got a telemetry command. Uh telemetry command is very important. Uh uh uh cuz we all have a tele is very
+14:5314 minutes, 53 secondsimportant for this this gathering inside gathering. So you have a server any server on program language. You want to learn best. You want to
+15:0015 minutesknow people use your site a lot. You want to know what's what languages you use for tutorial. You want to get insight any data. Um I have any data. uh
+15:1015 minutes, 10 secondstelemetry can help you gather insight on your data or what people your servers and everything it
+15:1715 minutes, 17 secondstelemet data insights and information reporting that's what telemet really gives you that's a polical
+15:2615 minutes, 26 secondsterri version um I'm going to this command to be implemented uh in the full version and it to be it works with the
+15:3415 minutes, 34 secondsthe poly rc file which can be in JSON or the poly standard file Uh so that's what it is. Uh uh for the binary for the
+15:4315 minutes, 43 secondsbinary architecture you don't have to mix and match and don't forget now you have to
+15:4915 minutes, 49 seconds[Music]
+15:5015 minutes, 50 secondsnow so that's that's a command that's implemented can be implemented but I'm going to show you the code binding command how to use the buckle in a real
+15:5715 minutes, 57 secondsworld environment and uh try to show you how to use it uh how to use it now. Okay uh I'm going
+16:0516 minutes, 5 secondsto show you how to set this up and use it. Okay, one second. Okay, thank you for watching and
+16:1416 minutes, 14 secondslike, share, and subscribe. And subscribe.0:022 secondsWelcome back guys to my channel. Um I'm OBS Nambdi Obsess Nambdi Pala. Now to show you how to use the polycore file.
+0:1212 secondsUm so we're going to use a fresh build.
+0:1414 secondsUm first thing you need to know you need OpenSSL dependencies. You need openSl file that to the lip directory and the the open SSL um lip to module.
+0:2626 secondsuh the DL file the dynamic library that's uh associated with Windows um systems for shared objects files uh
+0:3434 secondsthe polic needs that and you can use the install the the the OpenSSL from from
+0:3939 secondsthe secure uh secure place online online uh or like winget wing get install
+0:4646 secondsopenslr or wing search wing get search on windows you can use that same package
+0:5252 secondson Linux to to to help with openl with installing the polyon is the same. So,
+1:001 minutefirst what I'm going to do is try to show you how to use public polic I'm going to install
+1:101 minute, 10 secondsthree give me a long listing but I'm going to install three of Pac-Man uh
+1:171 minute, 17 secondsthree of
+1:261 minute, 26 seconds[Music]
+1:271 minute, 27 secondsPan. So now tree come another tree. Okay. Now this the file was
+1:351 minute, 35 secondsworking okay. I'm going to make clean first. I'm going to move everything. So I'm going to try again to tree and tree and tree uh tree command. So these
+1:441 minute, 44 secondsare the files. You got the polyore file per micro pa but they're not ready for development yet. So I'm going to show you how to use in a real system and in a
+1:541 minute, 54 secondsreal world um to use how to start get started with olico. So what you want to do is make clean and remove all mix to
+2:032 minutes, 3 secondsremove all the B build. Uh so what we're doing is build a fresh copy of the
+2:132 minutes, 13 secondspolicy security for policy is a big concern for this cuz you have a Pokemon interface we need to b
+2:202 minutes, 20 secondsmore bouncers you know I thought I expect people on the API system. Uh so when you use a poly core the core the core thing we want to do is uh we use
+2:292 minutes, 29 secondsthe zero trust principle uh very for security measures. Uh so so we never we never trust a system we never trust a
+2:372 minutes, 37 secondssystem any system on the internet we never trust it um that's trying to access our API or make request for API change data to API or anything like that
+2:442 minutes, 44 secondsupdate data um API uh policies has a uses a zero trust principle so at every
+2:522 minutes, 52 secondsevery corner every command to make sure that we have system that we uh can verify uh so zero zero trust I've
+3:003 minutesmentioned some my last video we have command foration otherwise ation with my algorithm I made to authorize and authorize in case you look at the competition for the algorithm u but I'll
+3:103 minutes, 10 secondsshow you that later uh so we have a medium we have medium medium obsess no
+3:173 minutes, 17 secondsit's old one but I it's not there then I upload it so you have a system and then we then and
+3:263 minutes, 26 secondsthen verify al check whether system is the right one to be authentic authorized that's usual in a nutshell It's about
+3:343 minutes, 34 secondsmaking algorithms and developing a way to make sure we always trust the system.
+3:373 minutes, 37 secondsWe never trust a system. We never trust the system. Anything access anything internet devices, any IoT devices,
+3:423 minutes, 42 secondsbusiness services uh and they al each stage of verification and that's what this one this is a tri version. It
+3:493 minutes, 49 secondsdoesn't have that feature but uh business in the in the next version.
+3:543 minutes, 54 secondsOkay. Now I'm going to clear some things. I'm going to run make or or just make. I'm going to compile it. It's compiling. It's still compiling. It's still compiling. Okay. Still building.
+Chapter 2: Minute.6:00: Build system compilation showing library generation
+4:054 minutes, 5 secondsIt's built it. Okay. It's still building. Okay. I'll make
+4:154 minutes, 15 secondsa fail.
+4:184 minutes, 18 seconds[Music]
+4:214 minutes, 21 secondsUm I think it did fail. Uh this error. Um okay. One
+4:314 minutes, 31 secondssecond, guys. It must push the dev branch. I think it works in the dev branch. Okay. Once again, guys,
+4:444 minutes, 44 secondsuh uh uh good. So, we're going to make clean. So, cancel. We don't want to start his changes once we choose the death r instead.
+4:564 minutes, 56 secondsH. Um, oh um, now now when this should work now
+5:055 minutes, 5 secondscuz it's a I'm going to try and make again clean and make I make the build tool to use to
+5:145 minutes, 14 secondsbuild the pole. Now I can build again should work now. Now it should work cuz we have updated. Okay, it didn't
+5:215 minutes, 21 secondswork and there exe file. Okay, that is fine.
+5:275 minutes, 27 secondsSo, one
+5:305 minutes, 30 seconds[Music]
+5:345 minutes, 34 secondssecond. One second. One second. I'll try to fix this. I had a video ready, but
+5:425 minutes, 42 secondsum yeah, one second. It's got a video short, but now
+5:505 minutes, 50 secondsI'm ready. Uh so, so you now I want to show you how to use it.
+5:545 minutes, 54 secondsSo you now once we use your pore you have to now run a make command version make lane remove everything now
+6:036 minutes, 3 secondsmake now I get ls lib ls b p b p b p b p b p b p b p b p b p b pin
+6:106 minutes, 10 secondsuh li get a shared object library for you know if you know shared objects it's just it's for interactive applications
+6:176 minutes, 17 secondssharing applications um share object files for library for sh W file to um
+6:266 minutes, 26 secondsshell objects. Uh shell objects are just objects that are for two systems. Your application can use to connect to make
+6:336 minutes, 33 secondssimilar calls to the shell objects files. Uh it's like glows. Uh DL dynamic DL can be called similarly functions.
+6:436 minutes, 43 secondsThis is static library. uh we can learn the exe this is a a file an archive which is a shared objects file um a library poly and you go to bin polyexe
+6:536 minutes, 53 secondsfile uh here so I'll show you how to demonst file so what you're going to do is now
+6:596 minutes, 59 seconds[Music]
+7:017 minutes, 1 secondum I'm going to open a new tab
+7:127 minutes, 12 secondshere so now I want to directly here. So now now I'm going to make I'm going to try to I already
+7:197 minutes, 19 secondsbuilt all of and interive for help. I get the help command I can start network and all that
+7:277 minutes, 27 secondsgood stuff. A quick this is a read in interive system where you can test where
+7:357 minutes, 35 secondsyou can run in a mode for development purposes to see whether your configure as well your config works as intended.
+7:427 minutes, 42 secondsUh it's going to be interesting G version 2. Uh but it got to be for only development only. You never unless you want to rep in a in a system in a life
+7:517 minutes, 51 secondsenvironment unless you have you should never do it. There's no but if but no no questions there. Uh cuz it's in trial mode. You can check scripts and
+7:597 minutes, 59 secondseverything. Uh but it's not available to run polic um in the production mode only in development only testing commands.
+8:108 minutes, 10 secondsNow I'm going to create this purple. Now when I try polle um file so this is the poly
+8:198 minutes, 19 secondsfile I'm the old version for now
+8:278 minutes, 27 secondsconfig.pical file and this is a config.pical policable file that's what it looks like
+8:358 minutes, 35 secondspolication and this so what this means the server node exposes port 8080 to uh
+8:418 minutes, 41 seconds88 to4 uh so the binding is uh 8 to4 the server python for this server the python the protocol server which is a reverse
+8:498 minutes, 49 secondspocket system uh exposes port um python 31 to4 so this this this port this server
+8:578 minutes, 57 secondsthis this server to work so it seems event and so on and so forth and action settings for it. Okay, that's the first config. Now other configure bindings.
+9:089 minutes, 8 secondsSo there's not only
+9:289 minutes, 28 seconds[Music]
+9:309 minutes, 30 secondsno dots dot. So you see this can be node.pol Polle RC but we know we name it polic this is
+9:399 minutes, 39 secondsthe old version so it's just the polyore RC uh but it's for architecture so it's best to name it like that as well you can name the config anything you like as
+9:469 minutes, 46 secondswell you can rename the config to uh uh this poly file extension rename it anything you want you press enter oh um
+9:569 minutes, 56 secondsconcatenate uh call now now this is the user system so you now have port ET
+Chapter 3: Minute.12:00: Configuration file walkthrough with actual port mappings
+10:0510 minutes, 5 secondsmap 804. So this is policical system but it's for zero trust uh just mapping to
+10:1210 minutes, 12 secondsthe protocol server. So it knows con this port and all workspace communication uh all of this um system but you can look into a
+10:2110 minutes, 21 secondsprotocol um system. So this is the binding specific uh thing. So I'm going to show you how it works. So now I'm going to start a poly core for development
+10:3010 minutes, 30 secondspurposes. Like we're going to uh present it with a real life system now. So we're going to do the polyore exe file and
+10:3810 minutes, 38 secondswe're going to do sorry this bin polyore put this f uh cuz it's something called
+10:4510 minutes, 45 secondsconfiguration file. So the configuration file or the poly file is config.pol. Now this is like a real life example. You don't really uh interact with the whole
+10:5410 minutes, 54 secondssystem directly to the into you don't you never interact with the whole system or all you just all you just do is deploy this uh have a server provide a
+11:0311 minutes, 3 secondspower to this cut config 4 and you start the production environment and bridge your binance server now now this server is going to run indefinitely this a
+11:1011 minutes, 10 secondsserver this is going to run indefinitely so that's a server that's just waiting for requests for the server this is a polical server so it's
+11:1811 minutes, 18 secondsgoing to wait for calls for detail on the real server so this the server that's running data on the server waiting for data. It's a polling service
+11:2611 minutes, 26 secondswaiting for data. So right now it's ready to just pull and you can get reporting to uh it's just pretty much your telemetry but you know you get into
+11:3511 minutes, 35 secondstoo. So you're going to go to the binance now I'm going to run Binance.
+11:4111 minutes, 41 secondsSo now okay
+11:5611 minutes, 56 secondsnow and now now now I'm in the B this now I got poly for this co is just
+12:0412 minutes, 4 secondsreally running so we got to do now is now uh run the binance so we're going to do is um I'm going to show you the binance That's so the
+12:1512 minutes, 15 secondsbinders and tree node binders. Okay, tree. Um, okay. I'm going to install the tree command. It's going
+12:2412 minutes, 24 secondsto show I'm going to show you node bindings. I'm using
+12:3512 minutes, 35 secondsa is one. So, this is fine. And this is no poly.
+12:4112 minutes, 41 secondsand three examples. So this uh so this all this all the now this bindings m file which
+12:5012 minutes, 50 secondsexplor the config file. So uh the server so the config file you saw earlier is what's uh being used to configure this uh so you got two type of binding you
+12:5912 minutes, 59 secondsgot to bind specific configuration and polyore polyore server the whole system that handles the polymorph system. So this is the binding to the system. You
+13:0713 minutes, 7 secondscan have node polycom pi policle um can have node polic pi policle what system architecture thing you want to
+13:1413 minutes, 14 secondsconnect to your system uh you have what need you have you got this whole system uh and this now I'm going to try to
+13:2013 minutes, 20 secondsconnect if if I no
+13:2813 minutes, 28 seconds[Music]
+13:3513 minutes, 35 secondspolicy node Uh so ser can set it's not server. So now I'm going to try to run the procore
+13:4413 minutes, 44 secondsserver. So uh server
+13:5213 minutes, 52 secondsfile cut I'll show you. So this server file is just a raw
+14:0014 minutesserver. Uh but you what you do is import the bindings. uh the binary I just mapped to the data I mapped to the polyexe file uh just mapped this data
+14:0914 minutes, 9 secondssystem uh the polyexe file the configuration file on the whole system here but you see I didn't put a poly call uh driver like this is just binary
+14:1914 minutes, 19 secondsto the data you can put them uh the driver server logic and it's not even the it's not the it's not the end user it's not the end user your data consumer
+14:2714 minutes, 27 secondsimporting the API all you have to do is hit enter path route and hit enter that's what you have to do uh and just get that data whether it's
+14:3514 minutes, 35 secondscrude get request I want to get or not uh so now I'm going to clear see I didn't import this bin data and I have to go secure all the data so I clear
+14:4414 minutes, 44 secondssystem now I'm going to run a server a server examples
+14:5214 minutes, 52 secondsexamples right here system 184 remember it's 1 config file that's what the
+Chapter 4: Minute.: Live server responses across multiple programming languages
+15:0015 minutesserver still doing too so now we're going to do one more Let's have one more WhatsApp. Uh I'll show you how to
+15:0915 minutes, 9 seconds[Music]
+15:1315 minutes, 13 secondsum Okay.
+15:1515 minutes, 15 seconds[Music]
+15:2415 minutes, 24 secondsUm okay.
+15:2615 minutes, 26 secondsSo here again try show now I'm going to show you examples three examples but that was
+15:3315 minutes, 33 secondsbinding examples server now I've got some programs going this is oh go mistakes were made so this is go binary
+15:4115 minutes, 41 secondsso I'm going to now um run this file so
+15:5015 minutes, 50 secondsclient test client test
+16:0316 minutes, 3 secondsclient and this book data is what's on server 7. I'm going use Python to do it.
+16:0816 minutes, 8 secondsPython Python. Okay, I don't have Python here. But watch that. Wait, wait for it.
+16:1316 minutes, 13 secondsI'm going to try to um use other programs I have
+16:1716 minutes, 17 secondslower. I do have L. So do um test client
+16:2616 minutes, 26 secondslower the problems. Uh cond here you know I don't cond go. Oh let's have a go. Okay. So,
+16:4016 minutes, 40 secondsI'm going to go go run uh let's claim it's
+16:5016 minutes, 50 secondsmformed. We did get it. Oh, yes. Um one
+16:5816 minutes, 58 secondssecond. He's my phone cuz he he doesn't know how to handle that. The B is not doesn't know how to write port. I'm going to nano a
+17:0817 minutes, 8 secondstest this uh it's mformed
+17:1617 minutes, 16 secondshere is that uh okay so it is m
+17:2317 minutes, 23 secondsthere I don't know it's a string u it's not really m878
+17:3417 minutes, 34 secondsfor so this connect this is we're going to try to connect to it is the four but it gets that data
+17:4017 minutes, 40 secondstoo for this book rout so it just correct
+17:4517 minutes, 45 seconds[Music]
+17:4717 minutes, 47 secondsum yes it gets the data uh uh so it did get the data created a book box uh test route so it didn't get
+17:5517 minutes, 55 secondsthe data yes error too uh so it works like that you go to Python uh I'm going to show I'm going
+Chapter 5: Minute.20:00: Browser verification showing identical JSON data regardless of client language
+18:0318 minutes, 3 secondsshow you to push one for row. I'm going to show you here. So system I'm going to try to make a
+18:1018 minutes, 10 secondsrequest to that. Uh so I'm going to try to uh make a request there. So I'm going to run a Python S file in another
+18:1818 minutes, 18 secondsenvironment. So I want to just copy that file. Um get Python
+18:2518 minutes, 25 secondshere. So Python help Python. So I want to copy
+18:3218 minutes, 32 secondsuh so one second. So so you can run the Python I have Python system here. One second guys I'll show you
+18:4018 minutes, 40 secondssomething Firefox Facebook.
+18:4718 minutes, 47 secondsOkay. So I'm going to go to the main server.
+18:5118 minutes, 51 secondsUm the server it's here. Make sure the server now the server hit the local host.
+19:0019 minutesat HF4 not the portal server this the monkey books you see this data um this data is
+19:0919 minutes, 9 secondsthe same data uh that you're getting uh on the host system and that's what it's doing so it's what it is uh this data is
+19:1719 minutes, 17 secondswhat it is you could get it from any language can index in a browser the raw data is there the JSON formatted is there and the header center here uh so
+19:2619 minutes, 26 secondsyou can look at it code JSON API uh and that's a polic for you try Python you can get you can get the exact um the
+19:3519 minutes, 35 secondstrial version and use it so you go to um I don't think I have oh yes yes I have it on my system here I want to find
+19:4219 minutes, 42 secondsit for you guys now so can
+19:5119 minutes, 51 secondsPython I'm not finding out Um
+20:0320 minutes, 3 secondsum and then I'm going to do um so I'm going to show you the examples now. So now I'm going to show you okay see the
+20:1020 minutes, 10 secondsexamples see okay examples show my Python one and the Python one be uh you have to understand
+20:1720 minutes, 17 secondsbut you know what formatted to uh the Python
+20:2520 minutes, 25 secondsfile I still get the same data so it doesn't matter any language you use any data you use uh just get the data
+20:3220 minutes, 32 secondsseamlessly it gets it all in one now okay now thank you for watching this video please like share subscribe. It helps me so much uh to grow as a human
+20:4020 minutes, 40 secondsbeing as a developer and if you like the project so you can continue to do um so what you see is there yeah I believe
+20:4820 minutes, 48 secondsthere's a lot of benefits a lot of um I'm going to we have more commands coming so uh for compare system so if
+20:5520 minutes, 55 secondsyou want to make any corey AP right but you know for each domain so we got we got microser architecture edge computing
+21:0321 minutes, 3 secondsuh to solve real problems and that's what I'm focusing on got term command for service and reporting of data handling data properly. Uh but what
+21:1021 minutes, 10 secondsprotocol focuses on is on an FIFA FI bridge. So if you want to migrate to what what just stitches all the system
+21:1821 minutes, 18 secondstogether, you want to you want to have your financial service cobalt legacy code that serves the bank's details that serves bank data and consider request
+21:2721 minutes, 27 secondswith polyore the polyore function function interface command the cobalt bridge to to connect to connect um the the connect the whole system together.
+21:3521 minutes, 35 secondsUh you want you want to um go to finance system uh you want to um those API those APIs you want to
+21:4321 minutes, 43 secondsum want to make a game use a get finger interface command for Python to switch all those things together and make a web
+21:5121 minutes, 51 secondsbased game or even a CBS game that you unified architecture so polical or poly is not to see or to see what you try to
+21:5821 minutes, 58 secondsdo is it's not just a C project it's it's unified architecture finding all your code all your things together it solve that problem of uh you don't have
+22:0722 minutes, 7 secondscup issue go new version uh you want to then off switch your version so new python version 3 pen 4 it doesn't matter
+22:1422 minutes, 14 secondsit just all pol stitches everything together and you could just write the use the fction interface know the poly core uh you can use that through the for
+22:2322 minutes, 23 secondsinterface that's pretty pol it's a project like share and subscribe and thank you for watching I
+22:3122 minutes, 31 secondsappreciate each one and everyone and follow me follow me on my social media Lift up everything. Share share the love
+22:3822 minutes, 38 secondsand may the power of polyore be with you.
+
+# LibPolyCall v2 — Telemetry Code Replay System: Symbolic Interpreter Specification
+
+**Repository:** `github.com/obinexusmk2/libpolycall-v2`  
+**Component:** `polycore telemetry` subsystem  
+**Derived from:** OBINexus video corpus + constitutional computing framework  
+**Author directive:** CodexAI implementation target  
+
+---
+
+## 1. System Overview
+
+The **Telemetry Code Replay Symbolic Interpreter (TCRSI)** is the core intelligence layer of the `polycore telemetry` command. It provides:
+
+1. **Silent observation** — a stateless protocol observer that intercepts request/response cycles without mutating system state
+2. **GUID-seeded state tracking** — cryptographically seeded global unique identifiers that encode every state transition
+3. **Replay engine** — deterministic re-execution of any captured state sequence to reproduce bugs or verify correctness
+4. **Symbolic interpretation** — filter/flash function mapping that transforms raw state sequences into human-readable symbolic traces
+
+The system is grounded in the **NFA (Nondeterministic Finite Automaton)** model mapped to the polycore router binding architecture.
+
+---
+
+## 2. Architecture Diagram
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     POLYCORE TELEMETRY LAYER                     │
+│                                                                   │
+│  ┌──────────────┐    ┌──────────────┐    ┌─────────────────┐    │
+│  │  OBSERVER    │    │  GUID ENGINE │    │  REPLAY ENGINE  │    │
+│  │  (silent)    │───▶│  (seeded)    │───▶│  (deterministic)│    │
+│  │              │    │              │    │                 │    │
+│  │ intercepts   │    │ SHA-256 seed │    │ retrace + verify│    │
+│  │ req/resp     │    │ state→string │    │ failure replay  │    │
+│  └──────────────┘    └──────────────┘    └─────────────────┘    │
+│          │                   │                    │              │
+│          ▼                   ▼                    ▼              │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │             SYMBOLIC INTERPRETER (FILTER/FLASH)           │   │
+│  │                                                            │   │
+│  │  filter(state_seq) → sparse_repr → flash(symbol_map)      │   │
+│  │  Bidirectional: forward trace + inverse relay recovery     │   │
+│  └──────────────────────────────────────────────────────────┘   │
+│          │                                                        │
+│          ▼                                                        │
+│  ┌──────────────────┐    ┌─────────────────┐                    │
+│  │   TICKET SYSTEM  │    │  UID / GUID MAP  │                   │
+│  │  attach to error │    │  session + global│                   │
+│  └──────────────────┘    └─────────────────┘                    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 3. Core Data Structures
+
+### 3.1 GUID State Node
+
+```c
+/* include/polycall/telemetry/guid.h */
+
+#ifndef POLYCALL_TELEMETRY_GUID_H
+#define POLYCALL_TELEMETRY_GUID_H
+
+#include <stdint.h>
+#include <time.h>
+
+#define POLYCALL_GUID_SEED_LEN   32   /* SHA-256 output bytes          */
+#define POLYCALL_GUID_STRING_LEN 65   /* hex string + null terminator  */
+#define POLYCALL_MAX_STATE_DEPTH 4096 /* max automaton states per trace */
+
+typedef struct polycall_guid {
+    uint8_t  seed[POLYCALL_GUID_SEED_LEN];  /* cryptographic seed          */
+    char     string[POLYCALL_GUID_STRING_LEN]; /* hex string representation */
+    uint64_t timestamp_ns;                   /* nanosecond timestamp        */
+    uint32_t sequence_id;                    /* monotonic sequence counter  */
+} polycall_guid_t;
+
+typedef enum polycall_state_type {
+    STATE_REQUEST_RECEIVED  = 0x01,
+    STATE_AUTH_CHECK        = 0x02,
+    STATE_DATA_PROCESSED    = 0x03,
+    STATE_RESPONSE_SENT     = 0x04,
+    STATE_ERROR             = 0x05,
+    STATE_ROUTE_TRANSITION  = 0x06,
+    STATE_BINDING_INVOKED   = 0x07,
+    STATE_EDGE_CACHE_HIT    = 0x08,
+    STATE_EDGE_CACHE_MISS   = 0x09,
+} polycall_state_type_t;
+
+typedef struct polycall_state_node {
+    polycall_guid_t          guid;          /* unique ID for this state        */
+    polycall_state_type_t    type;          /* what kind of state transition   */
+    char                     route[256];    /* endpoint/route that was active  */
+    char                     binding[128];  /* which language binding invoked  */
+    uint8_t                  action_hash[32]; /* SHA-256 of actions taken      */
+    struct polycall_state_node *prev;       /* linked list: previous state     */
+    struct polycall_state_node *next;       /* linked list: next state         */
+    uint64_t                 timestamp_ns;  /* when this state was entered     */
+} polycall_state_node_t;
+
+typedef struct polycall_state_trace {
+    polycall_state_node_t   *head;          /* oldest state in trace           */
+    polycall_state_node_t   *tail;          /* most recent state               */
+    uint32_t                 depth;         /* number of states recorded       */
+    polycall_guid_t          trace_guid;    /* GUID for the entire trace       */
+    char                     uid[64];       /* user identifier for session     */
+} polycall_state_trace_t;
+
+#endif /* POLYCALL_TELEMETRY_GUID_H */
+```
+
+### 3.2 Symbolic Filter/Flash Map
+
+```c
+/* include/polycall/telemetry/symbolic.h */
+
+#ifndef POLYCALL_TELEMETRY_SYMBOLIC_H
+#define POLYCALL_TELEMETRY_SYMBOLIC_H
+
+#include "guid.h"
+
+/*
+ * FILTER: pure function — processes state without destroying it.
+ *         Mutates data representation, not program state.
+ *         (splice/search/sort/merge operations)
+ *
+ * FLASH:  stores the filtered result bidirectionally.
+ *         Two-to-one: two inputs produce one symbol output.
+ *         One-to-two: one symbol can be decoded back to both inputs.
+ */
+
+#define POLYCALL_SYMBOL_MAX_LEN   128
+#define POLYCALL_FILTER_DEPTH     16   /* max filter pipeline stages */
+
+typedef struct polycall_symbol {
+    char     name[POLYCALL_SYMBOL_MAX_LEN];
+    uint32_t code;
+    uint8_t  hash[32];                 /* SHA-256 of symbol content  */
+    int      is_bidirectional;         /* can be replayed in reverse  */
+} polycall_symbol_t;
+
+typedef struct polycall_filter_result {
+    polycall_symbol_t  symbol;
+    polycall_state_node_t *source_state;
+    char               sparse_repr[512]; /* sparse representation of state */
+    int                is_terminal;      /* true if this is an error/end   */
+} polycall_filter_result_t;
+
+/* Filter function signature: pure, does not modify source state */
+typedef int (*polycall_filter_fn)(
+    const polycall_state_node_t *in,
+    polycall_filter_result_t    *out
+);
+
+/* Flash function: store filtered result bidirectionally */
+typedef int (*polycall_flash_fn)(
+    const polycall_filter_result_t *in,
+    polycall_symbol_t              *out_forward,
+    polycall_symbol_t              *out_inverse   /* NULL if not needed */
+);
+
+typedef struct polycall_symbolic_pipeline {
+    polycall_filter_fn  filters[POLYCALL_FILTER_DEPTH];
+    polycall_flash_fn   flash;
+    uint32_t            filter_count;
+    int                 bidirectional;   /* enable inverse relay */
+} polycall_symbolic_pipeline_t;
+
+#endif /* POLYCALL_TELEMETRY_SYMBOLIC_H */
+```
+
+---
+
+## 4. GUID Engine Implementation
+
+```c
+/* src/telemetry/guid_engine.c */
+
+#include "polycall/telemetry/guid.h"
+#include <openssl/sha.h>
+#include <openssl/rand.h>
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+/*
+ * Seed the GUID using SHA-256 over:
+ *   random_bytes || timestamp_ns || sequence_id || route
+ *
+ * This ensures:
+ *  - No two GUIDs are the same (randomness + time)
+ *  - GUIDs are reproducible given the seed (deterministic replay)
+ *  - Route is bound into the GUID (state-aware)
+ */
+int polycall_guid_generate(
+    polycall_guid_t *guid,
+    const char      *route,
+    uint32_t         sequence_id
+) {
+    if (!guid || !route) return -1;
+
+    /* --- Step 1: gather entropy --- */
+    uint8_t random_bytes[16];
+    if (RAND_bytes(random_bytes, sizeof(random_bytes)) != 1) return -2;
+
+    struct timespec ts;
+    clock_gettime(CLOCK_REALTIME, &ts);
+    uint64_t timestamp_ns = (uint64_t)ts.tv_sec * 1000000000ULL + ts.tv_nsec;
+
+    /* --- Step 2: build seed material --- */
+    uint8_t seed_material[256];
+    size_t  offset = 0;
+
+    memcpy(seed_material + offset, random_bytes, 16);  offset += 16;
+    memcpy(seed_material + offset, &timestamp_ns, 8);  offset += 8;
+    memcpy(seed_material + offset, &sequence_id, 4);   offset += 4;
+
+    size_t route_len = strlen(route);
+    if (route_len > 228) route_len = 228;
+    memcpy(seed_material + offset, route, route_len);  offset += route_len;
+
+    /* --- Step 3: SHA-256 hash --- */
+    SHA256(seed_material, offset, guid->seed);
+
+    /* --- Step 4: convert to hex string --- */
+    for (int i = 0; i < POLYCALL_GUID_SEED_LEN; i++) {
+        snprintf(guid->string + (i * 2), 3, "%02x", guid->seed[i]);
+    }
+    guid->string[POLYCALL_GUID_STRING_LEN - 1] = '\0';
+
+    guid->timestamp_ns = timestamp_ns;
+    guid->sequence_id  = sequence_id;
+
+    return 0;
+}
+
+/*
+ * Create a new state node and attach it to the trace.
+ * This is called at every state transition in the polycore system.
+ */
+int polycall_trace_push_state(
+    polycall_state_trace_t *trace,
+    polycall_state_type_t   type,
+    const char             *route,
+    const char             *binding,
+    const uint8_t          *action_data,
+    size_t                  action_data_len
+) {
+    if (!trace) return -1;
+
+    polycall_state_node_t *node = calloc(1, sizeof(polycall_state_node_t));
+    if (!node) return -2;
+
+    /* Generate GUID for this state */
+    polycall_guid_generate(&node->guid, route, trace->depth);
+
+    node->type = type;
+    strncpy(node->route,   route   ? route   : "unknown", 255);
+    strncpy(node->binding, binding ? binding : "none",    127);
+
+    /* Hash the action data to bind it into the state */
+    if (action_data && action_data_len > 0) {
+        SHA256(action_data, action_data_len, node->action_hash);
+    }
+
+    struct timespec ts;
+    clock_gettime(CLOCK_REALTIME, &ts);
+    node->timestamp_ns = (uint64_t)ts.tv_sec * 1000000000ULL + ts.tv_nsec;
+
+    /* Append to linked list */
+    node->prev = trace->tail;
+    node->next = NULL;
+
+    if (trace->tail) {
+        trace->tail->next = node;
+    } else {
+        trace->head = node;
+    }
+    trace->tail = node;
+    trace->depth++;
+
+    return 0;
+}
+```
+
+---
+
+## 5. Replay Engine Implementation
+
+```c
+/* src/telemetry/replay_engine.c */
+
+#include "polycall/telemetry/guid.h"
+#include "polycall/telemetry/symbolic.h"
+#include <stdio.h>
+#include <string.h>
+
+typedef enum polycall_replay_direction {
+    REPLAY_FORWARD  = 0,  /* trace states head → tail (normal)        */
+    REPLAY_INVERSE  = 1,  /* trace states tail → head (inverse relay) */
+} polycall_replay_direction_t;
+
+typedef struct polycall_replay_result {
+    polycall_state_node_t  *failure_state;  /* node where replay diverged  */
+    uint32_t                states_replayed;
+    char                    failure_guid[POLYCALL_GUID_STRING_LEN];
+    char                    summary[1024];  /* human-readable trace summary */
+    int                     reproduced;     /* 1 if failure was reproduced  */
+} polycall_replay_result_t;
+
+/*
+ * Replay the captured state trace against the live system.
+ *
+ * For each state in the trace:
+ *   1. Re-invoke the binding/route with the stored action hash
+ *   2. Compare the resulting GUID against the stored GUID
+ *   3. If mismatch → failure_state is set, replay stops
+ *
+ * Direction:
+ *   REPLAY_FORWARD  → reproduce the bug path (head to tail)
+ *   REPLAY_INVERSE  → verify recovery path (tail to head, inverse relay)
+ */
+int polycall_replay_trace(
+    const polycall_state_trace_t *trace,
+    polycall_replay_direction_t   direction,
+    polycall_replay_result_t     *result
+) {
+    if (!trace || !result) return -1;
+
+    memset(result, 0, sizeof(*result));
+
+    polycall_state_node_t *cursor;
+    if (direction == REPLAY_FORWARD) {
+        cursor = trace->head;
+    } else {
+        cursor = trace->tail;
+    }
+
+    uint32_t step = 0;
+    char snapshot_buf[2048];
+
+    while (cursor) {
+        /* Build snapshot of this state for the summary */
+        snprintf(snapshot_buf, sizeof(snapshot_buf),
+            "[%u] type=%d route=%s binding=%s guid=%s ts=%llu\n",
+            step,
+            cursor->type,
+            cursor->route,
+            cursor->binding,
+            cursor->guid.string,
+            (unsigned long long)cursor->timestamp_ns
+        );
+        strncat(result->summary,
+                snapshot_buf,
+                sizeof(result->summary) - strlen(result->summary) - 1);
+
+        /*
+         * SYMBOLIC CHECK:
+         * Verify the route is still valid in the current system state.
+         * If the route no longer exists or the binding hash changed,
+         * this is the divergence point.
+         *
+         * TODO: hook into polycore routing table for live verification
+         */
+        if (cursor->type == STATE_ERROR) {
+            result->failure_state = cursor;
+            strncpy(result->failure_guid,
+                    cursor->guid.string,
+                    POLYCALL_GUID_STRING_LEN - 1);
+            result->reproduced = 1;
+            break;
+        }
+
+        result->states_replayed = ++step;
+
+        if (direction == REPLAY_FORWARD) {
+            cursor = cursor->next;
+        } else {
+            cursor = cursor->prev;  /* inverse relay: walk backwards */
+        }
+    }
+
+    return result->reproduced ? 1 : 0;
+}
+
+/*
+ * Attach a replay result to the ticket system.
+ * Generates a ticket ID from the GUID + UID and writes to endpoint.
+ */
+int polycall_replay_create_ticket(
+    const polycall_replay_result_t *result,
+    const char                     *uid,
+    const char                     *ticket_endpoint,
+    char                           *ticket_id_out,
+    size_t                          ticket_id_len
+) {
+    if (!result || !uid || !ticket_endpoint) return -1;
+
+    /* Ticket ID = first 16 chars of failure GUID + "-" + UID prefix */
+    snprintf(ticket_id_out, ticket_id_len,
+             "PCTT-%.16s-%.8s",
+             result->failure_guid,
+             uid);
+
+    fprintf(stdout,
+            "[POLYCALL TICKET] id=%s endpoint=%s states=%u reproduced=%d\n",
+            ticket_id_out,
+            ticket_endpoint,
+            result->states_replayed,
+            result->reproduced);
+
+    /*
+     * TODO: POST ticket to ticket_endpoint via polycore HTTP binding
+     * Body: { "ticket_id": "...", "guid": "...", "trace_summary": "..." }
+     */
+
+    return 0;
+}
+```
+
+---
+
+## 6. Symbolic Interpreter — Filter/Flash Pipeline
+
+```c
+/* src/telemetry/symbolic_interpreter.c */
+
+#include "polycall/telemetry/symbolic.h"
+#include <string.h>
+#include <stdio.h>
+
+/*
+ * FILTER STAGE 1: Route normalization
+ * Pure function — extracts route structure without modifying state.
+ * "Splice" semantics: trim noise, preserve signal.
+ */
+static int filter_route_normalize(
+    const polycall_state_node_t *in,
+    polycall_filter_result_t    *out
+) {
+    if (!in || !out) return -1;
+
+    out->source_state = (polycall_state_node_t *)in;
+
+    /* Sparse representation: remove query params, keep base route */
+    const char *q = strchr(in->route, '?');
+    size_t base_len = q ? (size_t)(q - in->route) : strlen(in->route);
+    if (base_len >= sizeof(out->sparse_repr)) base_len = sizeof(out->sparse_repr) - 1;
+
+    strncpy(out->sparse_repr, in->route, base_len);
+    out->sparse_repr[base_len] = '\0';
+
+    return 0;
+}
+
+/*
+ * FILTER STAGE 2: State type classification
+ * Maps state type enum to symbolic name.
+ */
+static int filter_state_classify(
+    const polycall_state_node_t *in,
+    polycall_filter_result_t    *out
+) {
+    if (!in || !out) return -1;
+
+    static const struct { polycall_state_type_t type; const char *symbol; } map[] = {
+        { STATE_REQUEST_RECEIVED,  "REQ"   },
+        { STATE_AUTH_CHECK,        "AUTH"  },
+        { STATE_DATA_PROCESSED,    "DATA"  },
+        { STATE_RESPONSE_SENT,     "RESP"  },
+        { STATE_ERROR,             "ERR"   },
+        { STATE_ROUTE_TRANSITION,  "ROUTE" },
+        { STATE_BINDING_INVOKED,   "BIND"  },
+        { STATE_EDGE_CACHE_HIT,    "CAHIT" },
+        { STATE_EDGE_CACHE_MISS,   "CAMIS" },
+        { 0, NULL }
+    };
+
+    for (int i = 0; map[i].symbol; i++) {
+        if (map[i].type == in->type) {
+            strncpy(out->symbol.name, map[i].symbol, POLYCALL_SYMBOL_MAX_LEN - 1);
+            out->symbol.code = (uint32_t)in->type;
+            break;
+        }
+    }
+
+    out->is_terminal = (in->type == STATE_ERROR || in->next == NULL);
+    return 0;
+}
+
+/*
+ * FLASH: Store filtered result bidirectionally.
+ * forward  = normal symbol for replay
+ * inverse  = symbol for inverse relay recovery
+ *
+ * Two-to-one: (route_symbol, state_symbol) → flash output
+ * One-to-two: flash output → can recover both on inverse relay
+ */
+static int flash_bidirectional(
+    const polycall_filter_result_t *in,
+    polycall_symbol_t              *out_forward,
+    polycall_symbol_t              *out_inverse
+) {
+    if (!in || !out_forward) return -1;
+
+    /* Forward flash: route + state type → composite symbol */
+    snprintf(out_forward->name, POLYCALL_SYMBOL_MAX_LEN,
+             "%s::%s", in->sparse_repr, in->symbol.name);
+    out_forward->code = in->symbol.code;
+    out_forward->is_bidirectional = 1;
+
+    /* Inverse flash: reverse the composite for inverse relay */
+    if (out_inverse) {
+        snprintf(out_inverse->name, POLYCALL_SYMBOL_MAX_LEN,
+                 "INV[%s::%s]", in->symbol.name, in->sparse_repr);
+        out_inverse->code = ~in->symbol.code;  /* bitwise inverse code */
+        out_inverse->is_bidirectional = 1;
+    }
+
+    return 0;
+}
+
+/*
+ * Run the full symbolic pipeline over a state trace.
+ * Produces a symbol sequence that can be:
+ *   - printed as a human-readable trace
+ *   - diffed against a known-good trace
+ *   - replayed in forward or inverse direction
+ */
+int polycall_symbolic_interpret_trace(
+    const polycall_state_trace_t    *trace,
+    polycall_symbolic_pipeline_t    *pipeline,
+    polycall_symbol_t               *symbols_out,
+    uint32_t                        *symbols_count_out,
+    uint32_t                         max_symbols
+) {
+    if (!trace || !pipeline || !symbols_out || !symbols_count_out) return -1;
+
+    polycall_state_node_t *cursor = trace->head;
+    uint32_t count = 0;
+
+    while (cursor && count < max_symbols) {
+        polycall_filter_result_t fres;
+        memset(&fres, 0, sizeof(fres));
+
+        /* Run all filter stages */
+        for (uint32_t f = 0; f < pipeline->filter_count; f++) {
+            if (pipeline->filters[f](cursor, &fres) != 0) {
+                return -2;
+            }
+        }
+
+        /* Flash to output */
+        polycall_symbol_t inv;
+        pipeline->flash(&fres, &symbols_out[count], pipeline->bidirectional ? &inv : NULL);
+
+        count++;
+        cursor = cursor->next;
+    }
+
+    *symbols_count_out = count;
+    return 0;
+}
+
+/*
+ * Build the default pipeline for libpolycall-v2
+ */
+int polycall_telemetry_build_default_pipeline(
+    polycall_symbolic_pipeline_t *pipeline
+) {
+    if (!pipeline) return -1;
+
+    memset(pipeline, 0, sizeof(*pipeline));
+
+    pipeline->filters[0]    = filter_route_normalize;
+    pipeline->filters[1]    = filter_state_classify;
+    pipeline->filter_count  = 2;
+    pipeline->flash         = flash_bidirectional;
+    pipeline->bidirectional = 1;
+
+    return 0;
+}
+```
+
+---
+
+## 7. CMakeLists.txt Integration
+
+```cmake
+# src/telemetry/CMakeLists.txt
+
+set(POLYCALL_TELEMETRY_SOURCES
+    guid_engine.c
+    replay_engine.c
+    symbolic_interpreter.c
+)
+
+add_library(polycall_telemetry STATIC ${POLYCALL_TELEMETRY_SOURCES})
+
+target_include_directories(polycall_telemetry
+    PUBLIC
+        ${PROJECT_SOURCE_DIR}/include
+)
+
+# OpenSSL is required for SHA-256 seeding
+find_package(OpenSSL REQUIRED)
+target_link_libraries(polycall_telemetry
+    PRIVATE
+        OpenSSL::Crypto
+        Threads::Threads
+)
+
+# Register with nlink component system
+if(TARGET nlink_core_components)
+    add_dependencies(nlink_core_components polycall_telemetry)
+endif()
+
+# Install headers
+install(
+    DIRECTORY ${PROJECT_SOURCE_DIR}/include/polycall/telemetry
+    DESTINATION include/polycall
+)
+```
+
+---
+
+## 8. CLI Integration — `polycore telemetry` Command
+
+```c
+/* src/cli/commands/telemetry_cmd.c */
+
+#include "polycall/telemetry/guid.h"
+#include "polycall/telemetry/symbolic.h"
+#include <stdio.h>
+#include <string.h>
+
+/*
+ * polycall telemetry --observe <endpoint>
+ *   Start silent observation on an endpoint.
+ *
+ * polycall telemetry --replay <trace_guid>
+ *   Replay a captured trace by its GUID string.
+ *
+ * polycall telemetry --replay <trace_guid> --inverse
+ *   Replay in inverse relay mode (backwards, recovery verification).
+ *
+ * polycall telemetry --ticket <trace_guid> --uid <user_id> --endpoint <url>
+ *   Create a ticket from a captured error trace.
+ *
+ * polycall telemetry --dump <trace_guid>
+ *   Print symbolic interpretation of a trace.
+ */
+
+typedef enum telemetry_cmd_mode {
+    TELEM_MODE_OBSERVE,
+    TELEM_MODE_REPLAY,
+    TELEM_MODE_TICKET,
+    TELEM_MODE_DUMP,
+} telemetry_cmd_mode_t;
+
+int polycall_cmd_telemetry(int argc, char **argv) {
+    telemetry_cmd_mode_t mode = TELEM_MODE_DUMP;
+    const char *target        = NULL;
+    const char *uid           = NULL;
+    const char *endpoint      = NULL;
+    int         inverse       = 0;
+
+    for (int i = 1; i < argc; i++) {
+        if (strcmp(argv[i], "--observe") == 0 && i + 1 < argc) {
+            mode   = TELEM_MODE_OBSERVE;
+            target = argv[++i];
+        } else if (strcmp(argv[i], "--replay") == 0 && i + 1 < argc) {
+            mode   = TELEM_MODE_REPLAY;
+            target = argv[++i];
+        } else if (strcmp(argv[i], "--inverse") == 0) {
+            inverse = 1;
+        } else if (strcmp(argv[i], "--ticket") == 0 && i + 1 < argc) {
+            mode   = TELEM_MODE_TICKET;
+            target = argv[++i];
+        } else if (strcmp(argv[i], "--dump") == 0 && i + 1 < argc) {
+            mode   = TELEM_MODE_DUMP;
+            target = argv[++i];
+        } else if (strcmp(argv[i], "--uid") == 0 && i + 1 < argc) {
+            uid = argv[++i];
+        } else if (strcmp(argv[i], "--endpoint") == 0 && i + 1 < argc) {
+            endpoint = argv[++i];
+        }
+    }
+
+    switch (mode) {
+        case TELEM_MODE_OBSERVE:
+            fprintf(stdout, "[polycall telemetry] observing: %s\n", target);
+            /* TODO: attach silent observer to polycore routing layer */
+            break;
+
+        case TELEM_MODE_REPLAY:
+            fprintf(stdout, "[polycall telemetry] replaying trace: %s [%s]\n",
+                    target, inverse ? "INVERSE" : "FORWARD");
+            /* TODO: load trace from store, run polycall_replay_trace() */
+            break;
+
+        case TELEM_MODE_TICKET:
+            if (!uid || !endpoint) {
+                fprintf(stderr, "error: --ticket requires --uid and --endpoint\n");
+                return 1;
+            }
+            fprintf(stdout, "[polycall telemetry] creating ticket for trace: %s\n", target);
+            /* TODO: load trace, run polycall_replay_create_ticket() */
+            break;
+
+        case TELEM_MODE_DUMP:
+            fprintf(stdout, "[polycall telemetry] symbolic dump of trace: %s\n", target);
+            /* TODO: load trace, run polycall_symbolic_interpret_trace() */
+            break;
+    }
+
+    return 0;
+}
+```
+
+---
+
+## 9. Implementation Checklist for CodexAI
+
+The following tasks are ready for autonomous implementation in `libpolycall-v2`:
+
+| # | Task | File | Status |
+|---|------|------|--------|
+| 1 | Create `include/polycall/telemetry/` directory and header files | `guid.h`, `symbolic.h` | **TODO** |
+| 2 | Implement GUID engine with OpenSSL SHA-256 seeding | `src/telemetry/guid_engine.c` | **TODO** |
+| 3 | Implement state trace push/pop (NFA-style linked list) | `src/telemetry/guid_engine.c` | **TODO** |
+| 4 | Implement replay engine — forward + inverse relay | `src/telemetry/replay_engine.c` | **TODO** |
+| 5 | Implement symbolic filter pipeline (2-stage) | `src/telemetry/symbolic_interpreter.c` | **TODO** |
+| 6 | Implement bidirectional flash function | `src/telemetry/symbolic_interpreter.c` | **TODO** |
+| 7 | Register `polycall_telemetry` as nlink component | `src/telemetry/CMakeLists.txt` | **TODO** |
+| 8 | Wire `polycall_cmd_telemetry()` into CLI dispatch | `src/cli/commands/telemetry_cmd.c` | **TODO** |
+| 9 | Add ticket endpoint POST via polycore HTTP binding | `src/telemetry/replay_engine.c` | **TODO** |
+| 10 | Write unit tests: GUID uniqueness, replay determinism | `tests/telemetry/` | **TODO** |
+
+---
+
+## 10. Design Invariants (Constitutional Constraints)
+
+These rules are non-negotiable per the OBINexus zero-trust constitutional computing framework:
+
+1. **Observer is silent** — the telemetry layer NEVER modifies request/response data. It is read-only at the protocol layer.
+2. **GUID seeding is mandatory** — any GUID not seeded with cryptographic entropy (minimum SHA-256) is invalid and must be rejected.
+3. **MD5 is prohibited** — use SHA-256 minimum, SHA-3 preferred for new implementations.
+4. **Filter functions are pure** — they mutate data representations only, never program state.
+5. **Flash is bidirectional** — every flash operation must support inverse relay to enable recovery-path verification.
+6. **Replay is deterministic** — the same trace GUID must always produce the same symbol sequence given the same system state.
+7. **Tickets are GUID-bound** — no ticket may be created without an attached trace GUID and user UID.
+8. **Production mode exclusion** — the interactive/debug replay mode is available only in `POLYCALL_BUILD_DEVELOPMENT=ON`. It MUST NOT be compiled into production builds.
+
+---
+
+## 11. `.polycallrc` Telemetry Configuration Block
+
+```json
+{
+  "telemetry": {
+    "enabled": true,
+    "mode": "silent_observer",
+    "guid_algorithm": "sha256",
+    "max_trace_depth": 4096,
+    "ticket_endpoint": "http://localhost:8080/api/tickets",
+    "uid_namespace": "polycall-session",
+    "replay": {
+      "enabled": true,
+      "direction": "forward",
+      "inverse_relay": true
+    },
+    "symbolic": {
+      "bidirectional": true,
+      "filter_stages": ["route_normalize", "state_classify"],
+      "flash_mode": "bidirectional"
+    }
+  }
+}
+```Technical Specification: Isomorphic Binding Architecture
+#
+webdev
+#
+programming
+#
+ai
+#
+polyglot
+Core Philosophy: "All Bindings Are Drivers"
+SQUARE (Perfect Binding):
+┌────────────┐
+│            │  All 4 sides equal
+│   Binding  │  = Symmetric process
+│            │  = Bidirectional FFI
+└────────────┘
+
+RECTANGLE (Driver):
+┌──────────────────┐
+│                  │  2 pairs of equal sides
+│     Driver       │  = Asymmetric interface
+│                  │  = Request/Response pairs
+└──────────────────┘
+Polyglot Interaction Diagram
+graph TD
+    subgraph "LibPolyCall Core (C)"
+        DRIVER[DRIVER Daemon<br/>Port 3005→8085]
+        FFI[FFI Layer<br/>libpolycall.so]
+    end
+
+    subgraph "Language Bindings"
+        COBOL[COBOL<br/>cbl-polycall]
+        GO[Go<br/>gosilang]
+        PY[Python<br/>py-polycall]
+        JS[Node.js<br/>node-polycall]
+        JAVA[Java<br/>java-polycall]
+    end
+
+    subgraph "Schema Transform"
+        AST[AST Isomorphism<br/>Huffman-AVL]
+        IR[Canonical IR]
+    end
+
+    COBOL -->|JCL/VSAM| FFI
+    GO -->|struct{}| FFI
+    PY -->|dict/tuple| FFI
+    JS -->|JSON| FFI
+    JAVA -->|Object| FFI
+
+    FFI --> AST
+    AST --> IR
+    IR --> DRIVER
+Isomorphic Transform Rules
+For your example {x: 20.5, y: 70}:
+
+// Canonical Intermediate Representation (CIR)
+typedef struct {
+    enum { FLOAT64, INT64, STRING, NESTED } type;
+    union {
+        double f64;
+        int64_t i64;
+        char* str;
+        void* nested;
+    } value;
+} CIR_Value;
+
+typedef struct {
+    char* key;
+    CIR_Value value;
+} CIR_Field;
+
+typedef struct {
+    CIR_Field* fields;
+    size_t field_count;
+} CIR_Object;
+Language-Specific Mappings
+Language	Native Type	CIR Transform	Driver Format
+Python	{"x": 20.5, "y": 70}	CIR_Object	Binary protocol
+Go	struct{X float64; Y int}	CIR_Object	Binary protocol
+COBOL	01 POINT. 05 X PIC 9(2)V9. 05 Y PIC 9(2).	CIR_Object	Binary protocol
+Java	class Point{Float x; Integer y;}	CIR_Object	Binary protocol
+Zero-Trust Protocol
+Each binding registers with cryptographically-seeded GUID:
+
+typedef struct {
+    uint8_t seed[32];  // Cryptographic seed
+    uint64_t session;  // Session identifier
+    uint32_t sequence; // Message sequence
+    uint16_t checksum; // Data integrity
+} PolyCall_Header;
+Build Orchestration
+The unified Makefile ensures all bindings compile to the same ABI:
+
+POLYCALL_ABI = -fPIC -shared -Wl,-soname,lib$@.so.1
+CANONICAL_IR = -DUSE_CANONICAL_IR=1
+
+%.so: %.c
+    $(CC) $(CFLAGS) $(POLYCALL_ABI) $(CANONICAL_IR) $< -o $@
+State Machine Mapping
+Every cross-language call follows this state progression:
+
+Parse → Language-specific AST
+Transform → Canonical IR (lossless)
+Validate → Type coercion matrix
+Marshal → Binary protocol
+Route → DRIVER daemon
+Unmarshal → Target language
+Execute → Native invocation
+Return → Reverse transform
+This ensures the "square perfect" binding where input/output maintain structural equivalence across all supported languages.
+
+The key insight: by treating all bindings as drivers with paired interfaces (rectangle), we achieve the perfect square of bidirectional communication without data loss.
+
+DEV Community
+
+Very quick DEV Survey about cloud hosting providers, we appreciate your response!
+
+Cloud Provider Preferences
+Which of the following cloud providers have you heard of?
+
+Amazon Web Services
+
+Google Cloud
+
+Microsoft Azure
+
+IMB Cloud
+
+DigitalOcean
+
+Heroku
+
+Render
+
+Linode (Akamai Cloud)
+
+Vultr
+
+OVH
+
+Hetzner
+
+Cloudflare
+
+Netlify
+
+Vercel
+← Previous
+Question 1 of 4
+Next →
+Top comments (0)
+
+
+
+---
+
+*Specification generated for CodexAI autonomous implementation targeting `github.com/obinexusmk2/libpolycall-v2`*  

@@ -2,6 +2,7 @@
 add_executable(polycall_cli
     polycall_cli.c
     pid_manager.c
+    commands/telemetry_cmd.c
 )
 
 # Link all modules

@@ -10,6 +10,8 @@
 #include <signal.h>
 #include <pthread.h>
 
+#include "commands/telemetry_cmd.h"
+
 #ifdef _WIN32
 #include <winsock2.h>
 #include <ws2tcpip.h>
@@ -716,6 +718,10 @@ static void register_signal_handlers(void) {
 
 int main(int argc, char* argv[]) {
     bool non_interactive = false;
+
+    if (argc > 1 && strcmp(argv[1], "telemetry") == 0) {
+        return polycall_cmd_telemetry(argc - 1, argv + 1);
+    }
     const char* config_file = NULL;
     
     // Parse command line arguments

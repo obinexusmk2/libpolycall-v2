@@ -28,6 +28,12 @@ set(OBJECT_OUTPUT_DIR ${BUILD_BASE_DIR}/obj)
 # Thread support
 find_package(Threads REQUIRED)
 
+# Development-only features
+option(POLYCALL_BUILD_DEVELOPMENT "Enable development-only debug/replay features" OFF)
+if(POLYCALL_BUILD_DEVELOPMENT)
+    add_compile_definitions(POLYCALL_BUILD_DEVELOPMENT=1)
+endif()
+
 # Global includes
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
@@ -44,6 +50,7 @@ set(POLYCALL_MODULES
     hotwire
     stream
     zero
+    telemetry
 )
 
 # Build each module

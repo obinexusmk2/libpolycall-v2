@@ -1,0 +1,10 @@
+.git
+.gitignore
+_docker_build/
+docs/
+*.md
+!README.md
+*.o
+*.a
+*.so
+.DS_Store

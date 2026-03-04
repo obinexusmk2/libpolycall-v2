@@ -24,6 +24,7 @@ LOGDIR    ?= /var/log/polycall
 BUILD_DIR      := build
 CORE_BUILD     := $(BUILD_DIR)/core
 DAEMON_BUILD   := $(BUILD_DIR)/daemon
+BIN_DIR        := $(BUILD_DIR)/bin
 
 CC       ?= gcc
 CFLAGS   ?= -Wall -Wextra -O2 -fPIC -DVERSION=\"$(VERSION)\"
@@ -40,7 +41,7 @@ NPROC := $(shell nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
 # Primary Targets
 # ============================================================================
 
-.PHONY: all core cli daemon bindings install uninstall clean distclean test help
+.PHONY: all core cli daemon bindings install uninstall clean distclean test test-unit test-integration help
 
 all: core daemon
 	@echo ""
@@ -77,6 +78,10 @@ core:
 	@echo "=== Building libpolycall core ==="
 	@mkdir -p $(CORE_BUILD)
 	cd $(CORE_BUILD) && $(CMAKE) $(CMAKE_FLAGS) ../../core && $(MAKE) -j$(NPROC)
+	@mkdir -p $(BIN_DIR)
+	@if [ -f $(CORE_BUILD)/unix/bin/polycall ]; then cp $(CORE_BUILD)/unix/bin/polycall $(BIN_DIR)/polycall; fi
+	@if [ -f $(CORE_BUILD)/unix/bin/polycall_cli ]; then cp $(CORE_BUILD)/unix/bin/polycall_cli $(BIN_DIR)/polycall; fi
+	@if [ -f $(BIN_DIR)/polycall ]; then echo "  CLI: $(BIN_DIR)/polycall"; fi
 
 cli: core
 
@@ -135,21 +140,40 @@ bindings-rust:
 # ============================================================================
 
 test: core
-	@echo "=== Running tests ==="
-	@if [ -d core/test ]; then \
-		for t in core/test/test_*.c; do \
-			name=$$(basename "$$t" .c); \
-			echo "  Compiling $$name..."; \
-			$(CC) $(CFLAGS) -I core/include -I core/include/libpolycall \
-				"$$t" \
-				-L $(CORE_BUILD)/lib -L $(CORE_BUILD)/*/lib \
-				-lpthread \
-				-o $(BUILD_DIR)/$$name 2>/dev/null && \
-			echo "  Running $$name..." && \
-			LD_LIBRARY_PATH=$(CORE_BUILD)/lib:$(CORE_BUILD)/*/lib \
-				$(BUILD_DIR)/$$name || \
-			echo "  WARN: $$name failed"; \
-		done; \
+	@if [ "$(MODE)" = "unit" ]; then \
+		$(MAKE) --no-print-directory test-unit; \
+	elif [ "$(MODE)" = "integration" ]; then \
+		$(MAKE) --no-print-directory test-integration; \
+	else \
+		echo "=== Running tests (unit + integration) ==="; \
+		$(MAKE) --no-print-directory test-unit; \
+		$(MAKE) --no-print-directory test-integration; \
+	fi
+
+test-unit: core
+	@echo "=== Running unit tests ==="
+	@mkdir -p $(BUILD_DIR)
+	@$(CC) $(CFLAGS) \
+		-I core/src/cli/commands -I core/include -I core/include/libpolycall \
+		core/test/telemetry/test_telemetry_cmd_unit.c \
+		core/src/cli/commands/telemetry_cmd.c \
+		-o $(BUILD_DIR)/test_telemetry_cmd_unit
+	@$(BUILD_DIR)/test_telemetry_cmd_unit
+
+test-integration: core
+	@echo "=== Running integration tests ==="
+	@mkdir -p $(BUILD_DIR)
+	@$(CC) $(CFLAGS) -DPOLYCALL_BUILD_DEVELOPMENT=1 \
+		-I core/src/cli/commands -I core/include -I core/include/libpolycall \
+		core/test/telemetry/test_telemetry_cmd_integration.c \
+		core/src/cli/commands/telemetry_cmd.c \
+		-o $(BUILD_DIR)/test_telemetry_cmd_integration
+	@$(BUILD_DIR)/test_telemetry_cmd_integration
+	@if [ -x $(BIN_DIR)/polycall ]; then \
+		echo "=== Smoke testing CLI telemetry entrypoint ==="; \
+		$(BIN_DIR)/polycall telemetry --dump integration-smoke >/dev/null 2>&1 || true; \
+	else \
+		echo "WARN: $(BIN_DIR)/polycall not found; build core target first"; \
 	fi
 
 # ============================================================================

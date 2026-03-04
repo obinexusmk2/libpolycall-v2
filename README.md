@@ -99,6 +99,37 @@ The debugging nightmare of distributed systems is over—if you implement intell
 ---
 
 *"In a world of language silos, be the universal protocol. In an age of security breaches, be the zero-trust solution. In an era of blind systems, be the intelligent observer. The future isn't coming—it's here, and it's written in C."*
+
+## Developer Testing Quickstart (C / ANSI / CMake)
+
+This repository is being refactored toward isolated C components with separation of concerns, built by CMake and orchestrated by the top-level `Makefile`.
+
+### Build outputs
+- CLI binary target path: `./build/bin/polycall`
+- Daemon binary target path: `./build/daemon/polycalld`
+
+### Unit and integration tests
+- Unit tests (fast command-level behavior):
+  - `make test MODE=unit`
+- Integration tests (cross-component telemetry flows):
+  - `make test MODE=integration`
+- Full test sweep:
+  - `make test`
+
+Current telemetry-focused tests validate the `polycall telemetry` subcommand behavior in:
+- production-safe mode (debug replay disabled)
+- development mode (`POLYCALL_BUILD_DEVELOPMENT=1`) for replay/ticket/dump flows.
+
+### CLI and daemon responsibilities
+- **CLI (`polycall`)**: operator-facing command surface, including telemetry commands for observe/replay/ticket/dump.
+- **Daemon (`polycalld`)**: long-running process that owns socket lifecycle, signal handling, config reload, and request servicing.
+
+### Docker Compose readiness
+Use Docker Compose for runtime containment while keeping build/test local and deterministic:
+1. Build binaries with `make core daemon`.
+2. Validate telemetry paths with `make test MODE=unit` and `make test MODE=integration`.
+3. Package runtime image(s) with only `build/bin/polycall` and `build/daemon/polycalld` plus config.
+
 ## Version 1.1.0 - Unified Architecture (2024-09-10)
 
 ### What's New
